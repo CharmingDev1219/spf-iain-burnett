@@ -1,0 +1,84 @@
+
+{% comment %} Content settings {% endcomment %}
+
+{%- assign symbole_icon = section.settings.symbole_icon -%}
+{%- assign area_preheading = section.settings.area_preheading -%}
+{%- assign area_title = section.settings.area_title -%}
+{%- assign area_subheading = section.settings.area_subheading -%}
+{%- assign area_sign_text = section.settings.area_sign_text -%}
+{%- assign area_button_label = section.settings.area_button_label -%}
+{%- assign area_button_link = section.settings.area_button_link -%}
+{% comment %} End content settings {% endcomment %}
+{% style %}
+  #banner-{{ section.id }} .pretext {
+    color:{{ section.settings.pre_text_color }};
+  }
+  #banner-{{ section.id }} .headline {
+    color:{{ section.settings.heading_color }};
+  }
+  #banner-{{ section.id }} .subtitle {
+    color:{{ section.settings.sub_text_color }};
+  }
+  #banner-{{ section.id }} .sign-text {
+    color:{{ section.settings.sign_text_color }};
+  }
+  #banner-{{ section.id }} .action_button {
+    background: {{ section.settings.btn_bg_color }};
+    color:{{ section.settings.btn_label_color }};
+    border-color:{{ section.settings.btn_bg_color }}
+  }
+  #banner-{{ section.id }} .action_button:hover {
+    background: rgba(0,0,0,0);
+    color:{{ section.settings.btn_bg_color }};
+    border-color:{{ section.settings.btn_bg_color }}
+  }
+  @media only screen and (max-width: 480px) {
+  }
+{% endstyle %}
+
+<div id="banner-{{ section.id }}" class="text-area-contexts full-width--{{ section.settings.wide_display }}">
+  <div class="text-container">
+    {% unless area_preheading == blank and area_title == blank and area_subheading == blank and area_button_label == blank %}
+        <div class="area-content align-{{ section.settings.area_text_align }}">
+          {% if symbole_icon != blank %}
+            {% render 'image-element',
+                    image: symbole_icon,
+                    alt: symbole_icon.alt,
+                    stretch_width: true
+            %}
+          {% endif %}
+          {% if area_preheading != blank %}
+            <div class="pretext">
+              {{ area_preheading }}
+            </div>
+          {% endif %}
+          {% if area_title != blank %}
+            <h1 class="headline">
+              {{ area_title }}
+            </h1>
+          {% endif %}
+          {% if area_subheading != blank %}
+            <div class="subtitle">
+              {{ area_subheading }}
+            </div>
+          {% endif %}
+          {% if area_sign_text != blank %}
+            <div class="sign-text">
+              {{ area_sign_text }}
+            </div>
+          {% endif %}
+          {% if area_button_label != blank %}
+            <a {% if area_button_link != blank %}href="{{ area_button_link }}"{% endif %} class="action_button">
+              <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.574219" y="0.890625" width="63" height="63" rx="31.5" stroke="#D6C7A3"/>
+                <line x1="42.0742" y1="31.8906" x2="21.0742" y2="31.8906" stroke="#D6C7A3"/>
+                <path d="M32.9425 42.1886L42.842 32.2891L32.9425 22.3896" stroke="#D6C7A3"/>
+              </svg>
+              {{ area_button_label }}
+            </a>
+          {% endif %}
+        </div>
+
+    {% endunless %}
+  </div>
+</div>

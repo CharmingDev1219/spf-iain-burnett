@@ -1,0 +1,100 @@
+{% include 'include-instagram-feed' %}
+
+{% schema %}
+  {
+    "name": "Instagram Feed",
+    "class": "shopify-section--instagram-feed",
+    "settings": [
+      {
+        "type": "text",
+        "id": "pre_text",
+        "label": "Pre Text",
+        "default": "JOIN OUR SOCIAL MEDIA"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Show us your  moments with"
+      },
+      {
+        "type": "text",
+        "id": "sign_text",
+        "label": "Sign Text",
+        "default": "#highlandchocolatier"
+      },
+      {
+        "type": "range",
+        "id": "title_font_size",
+        "label": "Heading size",
+        "min": 24,
+        "max": 100,
+        "default": 42,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "text_font_size",
+        "label": "Text size",
+        "min": 12,
+        "max": 50,
+        "default": 16,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "sign_font_size",
+        "label": "Sign Font size",
+        "min": 40,
+        "max": 100,
+        "default": 42,
+        "unit": "px"
+      },
+      {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Text alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "align_left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Color"
+      },
+      {
+        "type": "color",
+        "id": "heading_color",
+        "label": "Heading"
+      },
+      {
+        "type": "color",
+        "id": "sign_color",
+        "label": "Sign Color"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text"
+      },
+      {
+        "type": "header",
+        "content": "Advanced"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Instagram Feed",
+        "category": "Text"
+      }
+    ]
+  }
+{% endschema %}

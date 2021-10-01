@@ -1,0 +1,67 @@
+{% comment %}
+** Rich text and image - dynamic **
+- Draggable section
+{% endcomment %}
+
+{% comment %} Assign object as block or section {% endcomment %}
+{% if type == 'block' %}
+  {%- assign object = block -%}
+{% else %}
+  {%- assign object = section -%}
+{% endif %}
+
+{%- assign id = object.id -%}
+
+{% comment %} Content settings {% endcomment %}
+{%- assign title = object.settings.title -%}
+{%- assign pre_text = object.settings.pre_text -%}
+{%- assign sign_text = object.settings.sign_text -%}
+{% comment %} End content settings {% endcomment %}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  #section--{{object.id}} .rich-text__heading {
+    font-size: {{object.settings.title_font_size}}px;
+    color:{{object.settings.heading_color}};
+  }
+  #section--{{object.id}} .pre-text {
+    font-size: {{object.settings.text_font_size}}px;
+    color:{{object.settings.text_color}};
+  }
+  #section--{{object.id}} .sign-text {
+    font-size: {{object.settings.sign_font_size}}px;
+    color:{{object.settings.sign_color}};
+  }
+{% endstyle %}
+
+<section id="section--{{object.id}}" class="section {{ css_class }}">
+  <div class="container">
+    <div class="one-whole column">
+      <div class="rich-text__content {{ object.settings.text_alignment }}">
+
+        {% if pre_text != blank %}
+          <h2 class="pre-text">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.06555 4.3208C5.98116 4.3208 4.32016 6.01436 4.32016 8.06618C4.32016 10.1506 5.98116 11.8116 8.06555 11.8116C10.1174 11.8116 11.8109 10.1506 11.8109 8.06618C11.8109 6.01436 10.1174 4.3208 8.06555 4.3208ZM8.06555 10.5088C6.73024 10.5088 5.62291 9.43406 5.62291 8.06618C5.62291 6.73087 6.69767 5.65611 8.06555 5.65611C9.40086 5.65611 10.4756 6.73087 10.4756 8.06618C10.4756 9.43406 9.40086 10.5088 8.06555 10.5088ZM12.8206 4.19052C12.8206 3.702 12.4297 3.31117 11.9412 3.31117C11.4527 3.31117 11.0619 3.702 11.0619 4.19052C11.0619 4.67905 11.4527 5.06988 11.9412 5.06988C12.4297 5.06988 12.8206 4.67905 12.8206 4.19052ZM15.2958 5.06988C15.2306 3.89741 14.9701 2.85521 14.1233 2.00843C13.2765 1.16165 12.2343 0.901099 11.0619 0.835962C9.85682 0.770825 6.24171 0.770825 5.03667 0.835962C3.8642 0.901099 2.85458 1.16165 1.97523 2.00843C1.12844 2.85521 0.867896 3.89741 0.802759 5.06988C0.737622 6.27491 0.737622 9.89002 0.802759 11.0951C0.867896 12.2675 1.12844 13.2772 1.97523 14.1565C2.85458 15.0033 3.8642 15.2638 5.03667 15.329C6.24171 15.3941 9.85682 15.3941 11.0619 15.329C12.2343 15.2638 13.2765 15.0033 14.1233 14.1565C14.9701 13.2772 15.2306 12.2675 15.2958 11.0951C15.3609 9.89002 15.3609 6.27491 15.2958 5.06988ZM13.7325 12.3652C13.5045 13.0166 12.9834 13.5051 12.3646 13.7657C11.3875 14.1565 9.10774 14.0588 8.06555 14.0588C6.99079 14.0588 4.71099 14.1565 3.7665 13.7657C3.11513 13.5051 2.6266 13.0166 2.36605 12.3652C1.97523 11.4207 2.07293 9.14095 2.07293 8.06618C2.07293 7.02399 1.97523 4.74419 2.36605 3.76713C2.6266 3.14833 3.11513 2.6598 3.7665 2.39925C4.71099 2.00843 6.99079 2.10614 8.06555 2.10614C9.10774 2.10614 11.3875 2.00843 12.3646 2.39925C12.9834 2.62723 13.4719 3.14833 13.7325 3.76713C14.1233 4.74419 14.0256 7.02399 14.0256 8.06618C14.0256 9.14095 14.1233 11.4207 13.7325 12.3652Z" fill="#9D7058"/>
+            </svg>
+            {{ pre_text }}
+          </h2>
+        {% endif %}
+        {% if title != blank %}
+          <h2 class="rich-text__heading title">
+            {{ title }}
+          </h2>
+        {% endif %}
+        {% if sign_text != blank %}
+          <h2 class="sign-text">
+            {{ sign_text }}
+          </h2>
+        {% endif %}
+
+        <div class="instagram-feed-part">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

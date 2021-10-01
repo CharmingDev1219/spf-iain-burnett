@@ -1,0 +1,1908 @@
+{
+  "current": {
+    "performance": "ludicrous",
+    "image_loading_style": "blur-up",
+    "logo_color": "#ffffff",
+    "regular_color": "#333333",
+    "mini_cart_text_color": "#ffffff",
+    "banner_color": "#ffffff",
+    "headline_color": "#333333",
+    "headline_footer_text_color": "#aaaaaa",
+    "sub_footer_text_color": "#aaaaaa",
+    "sale_color": "#8f1028",
+    "was_price_color": "#8c8b8b",
+    "promo_text_color": "#333333",
+    "shop_home_page_content_text_color": "#363636",
+    "newsletter_popup_color": "#363636",
+    "newsletter_section_color": "#000000",
+    "top_bar_color": "#000000",
+    "top_bar_color_hover": "#d6c7a3",
+    "nav_color": "#000000",
+    "nav_color_home": "#000000",
+    "nav_color_hover": "#8f1028",
+    "link_color": "#7d241e",
+    "link_hover_color": "#d54d4d",
+    "sidebar_nav_color": "#363636",
+    "sidebar_nav_color_hover": "#d54d4d",
+    "sub_footer_link_color": "#ffffff",
+    "sub_footer_link_color_hover": "#d6c7a3",
+    "btn_color": "#7d241e",
+    "banner_button_color": "#ffffff",
+    "btn_hover_color": "#d6c7a3",
+    "btn_text_color": "#ffffff",
+    "button_style": "square",
+    "read_more_style": "button",
+    "table_styles_enabled": true,
+    "slideshow_arrow_size": "light",
+    "arrow_color": "#333333",
+    "border_color": "#cccccc",
+    "headline_border_color": "#aaaaaa",
+    "headline_border": "0",
+    "divider_style": "solid",
+    "sub_footer_border_color": "#1b1f23",
+    "banner_style": "square",
+    "sale_banner_color": "#d54d4d",
+    "new_banner_color": "#03a196",
+    "search_section_color": "#000000",
+    "search_section_bg_color": "#cccccc",
+    "testimonial_color": "#ffffff",
+    "testimonial_bg_color": "#666666",
+    "modal_background_color": "#ffffff",
+    "shop_bg_color": "#ffffff",
+    "repeat_bg": "repeat",
+    "bg_fixed": false,
+    "bg_stretched": false,
+    "top_bar_bg_color": "#ffffff",
+    "top_bar_cart_bg_color": "#ffffff",
+    "minicart_bg_color": "#1e272d",
+    "banner_placeholder_background_color": "#ffffff",
+    "banner_background_color": "#1e1e1e",
+    "header_bg_color": "#ffffff",
+    "header_background": true,
+    "transparent_header": false,
+    "promo_bg_color": "#f2f2f2",
+    "shop_home_page_content_bg_color": "#f6f7f9",
+    "featured_links_background": "rgba(0,0,0,0)",
+    "sub_footer_color": "#1e272d",
+    "footer_bg": "",
+    "footer_bg_stretched": false,
+    "newsletter_popup_background_color": "#ffffff",
+    "newsletter_section_background_color": "#cccccc",
+    "password_page_text_color": "#ffffff",
+    "password_page_background_color": "#000000",
+    "logo__font": "oswald_n4",
+    "logo_font_style": "uppercase",
+    "logo_font_size": 20,
+    "top_bar_font_size": 12,
+    "top_bar_letter_spacing": 1,
+    "nav__font": "open_sans_n7",
+    "nav_font_style": "uppercase",
+    "nav_font_size": 14,
+    "nav_letter_spacing": 1,
+    "nav_shadow": false,
+    "button_weight": "normal",
+    "button_font_style": "none",
+    "button_font_size": 12,
+    "mega_text_font_size": 12,
+    "mega_text_letter_spacing": 0,
+    "headline__font": "noto_serif_n4",
+    "headline_font_style": "uppercase",
+    "headline_font_size": 42,
+    "headline_letter_spacing": 2,
+    "slideshow_headline__font": "noto_serif_n4",
+    "slideshow_headline_font_style": "uppercase",
+    "slideshow_headline_size": 42,
+    "slideshow_subtitle__font": "roboto_n3",
+    "slideshow_subtitle_font_style": "none",
+    "slideshow_subtitle_size": 14,
+    "slideshow_subtitle_letter_spacing": 1,
+    "slideshow_shadow": false,
+    "regular__font": "roboto_n4",
+    "regular_font_style": "none",
+    "regular_font_size": 15,
+    "footer_heading_font_size": 12,
+    "footer_font_size": 12,
+    "mega_menu_1": true,
+    "mega_menu_2": true,
+    "search_option": "product,page,article",
+    "align_height": false,
+    "collection_height": 200,
+    "thumbnail_hover_enabled": false,
+    "display_vendor": false,
+    "collection_secondary_image": false,
+    "sale_banner_enabled": true,
+    "collection_swatches": false,
+    "mobile_products_per_row": "2",
+    "pagination_type": "load_more",
+    "notify_me_form": true,
+    "product_form_style": "swatches",
+    "display_product_quantity": true,
+    "display_inventory_left": false,
+    "free_price_text": "Free",
+    "enable_shopify_review_comments": false,
+    "enable_shopify_collection_badges": false,
+    "quick_shop_enabled": false,
+    "quick_shop_style": "popup",
+    "quick_shop_full_description": false,
+    "description_words": 25,
+    "cart_action": "ajax",
+    "display_tos_checkbox": false,
+    "tos_page": "",
+    "go_to_checkout": true,
+    "display_special_instructions": false,
+    "display_savings": true,
+    "cart_message": "",
+    "show_shipping_calculator": true,
+    "shipping_calculator_default_country": "United States",
+    "currency_format": "money_format",
+    "show_multiple_currencies": true,
+    "supported_currencies": "USD CAD AUD GBP EUR JPY",
+    "default_currency": "USD",
+    "mailchimp_link": "",
+    "secondary_newsletter_banner": true,
+    "newsletter_popup": false,
+    "newsletter_popup_form": true,
+    "display_first_name": false,
+    "display_last_name": false,
+    "use_newsletter_border": false,
+    "newsletter_bg": "",
+    "newsletter_popup_image_align": "left",
+    "newsletter_popup_title": "Sign up today",
+    "newsletter_popup_text": "<p><\/p>",
+    "newsletter_popup_text_align": "center",
+    "newsletter_popup_seconds": 0,
+    "newsletter_popup_days": "14",
+    "twitter_link": "https:\/\/twitter.com\/shopify",
+    "facebook_link": "https:\/\/facebook.com\/shopify",
+    "youtube_link": "https:\/\/youtube.com\/user\/shopify",
+    "vimeo_link": "",
+    "pinterest_link": "",
+    "tumblr_link": "",
+    "instagram_link": "https:\/\/instagram.com\/shopify",
+    "snapchat_link": "",
+    "houzz_link": "",
+    "linkedin_link": "",
+    "email_link": "",
+    "disqus_enabled": false,
+    "disqus_shortname": "",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "promo_text": "",
+          "social_icons_header": false,
+          "phone_number": "",
+          "top_bar_menu": "top-bar-menu",
+          "show_cart": true,
+          "show_locale_selector": true,
+          "show_currency_selector": true,
+          "logo_display_width": 175,
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "main_linklist": "main-menu",
+          "main_linklist2": "footer",
+          "vertical_menu": false,
+          "dropdown_click": false,
+          "search_enabled": true,
+          "fixed_header": true,
+          "logo_position": "center",
+          "logo_alignment": "center",
+          "menu_position": "inline",
+          "menu_alignment": "align_left"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame.png",
+              "shop_information": "<p>Registered in Scotland as Highland <\/p><p>Chocolatier Ltd<\/p><p>VAT Reg. No. GB212372741 | <\/p><p>Company Reg. No. SC449145<\/p>",
+              "text_align": "center",
+              "social_icons_footer": false
+            }
+          },
+          "footer-1": {
+            "type": "link_list",
+            "settings": {
+              "menu": "chocolate-shop",
+              "social_icons_footer": false
+            }
+          },
+          "footer-2": {
+            "type": "link_list",
+            "settings": {
+              "menu": "our-story-for-footer",
+              "social_icons_footer": false
+            }
+          },
+          "6f1e7ac6-0ae0-44ed-a521-3ba62001dce9": {
+            "type": "link_list",
+            "settings": {
+              "menu": "customer-service",
+              "social_icons_footer": false
+            }
+          },
+          "2e30eed7-a153-48b7-89f4-eb801b2cdb66": {
+            "type": "text",
+            "settings": {
+              "title": "SOCIAL MEDIA",
+              "content": "",
+              "social_icons_footer": true
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1",
+          "footer-2",
+          "6f1e7ac6-0ae0-44ed-a521-3ba62001dce9",
+          "2e30eed7-a153-48b7-89f4-eb801b2cdb66"
+        ],
+        "settings": {
+          "copyright_text": "All rights reserved",
+          "display_designed_by": false,
+          "display_payment_methods": false,
+          "show_locale_selector": true,
+          "show_currency_selector": true
+        }
+      },
+      "1489283389016": {
+        "type": "image-with-text-overlay",
+        "settings": {
+          "wide_display": true,
+          "enable_featured_items": true,
+          "enable_btn_svg": false,
+          "image": "shopify:\/\/shop_images\/Rectangle_287.jpg",
+          "pretext": "<p>HOME OF THE WORLD’S BEST TRUFFLES <\/p>",
+          "title": "Craftsmanship and the pursuit of perfection",
+          "heading_font_size": 58,
+          "subtitle": "<p>Enjoy the selection of meticulously hand-craft chocolates that are presented in elegant boxes making them perfect for gift-giving.  <\/p>",
+          "caption_background": false,
+          "caption_background_transparency": false,
+          "button1": "SHOP OUR EXCELLENGE RANGE",
+          "button1_link": "#",
+          "button2": "",
+          "button2_link": "",
+          "sign_text": "",
+          "under_sign_text": "",
+          "text_position": "center",
+          "text_align": "center",
+          "pre_text_color": "#ffffff",
+          "heading_color": "#ffffff",
+          "sub_text_color": "#ffffff",
+          "sign_text_color": "#d6c7a3",
+          "under_sign_text_color": "",
+          "btn_label_color": "#7e241e",
+          "btn_bg_color": "#ffffff",
+          "mobile_image_crop": "none",
+          "mobile_text_below_image": true,
+          "mobile_text_color": "",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1489284533457": {
+        "type": "image-with-text-overlay",
+        "blocks": {
+          "198bcec8-074f-4e29-b025-1426fd492282": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image_124.png",
+              "img_width_px": "270",
+              "bottom_percentage": 27,
+              "title_bottom_percentage": 0,
+              "bg_image": "shopify:\/\/shop_images\/item_bg.png",
+              "size_border": 0,
+              "custom_svg": "",
+              "item_title": "Florentines box",
+              "sub_text": "",
+              "title_font_size": 12,
+              "font_weight": "bold",
+              "item_link": "#",
+              "link_text": "Shop Now",
+              "bg_color": "rgba(0,0,0,0)",
+              "border_color": "rgba(0,0,0,0)",
+              "title_color": "",
+              "sub_text_color": ""
+            }
+          },
+          "c1c9f45c-3e7d-48f3-864a-527f3c93cbef": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image_121.png",
+              "img_width_px": "270",
+              "bottom_percentage": 23,
+              "title_bottom_percentage": 0,
+              "bg_image": "shopify:\/\/shop_images\/item_bg.png",
+              "size_border": 0,
+              "custom_svg": "",
+              "item_title": "unique velvet truffles",
+              "sub_text": "",
+              "title_font_size": 12,
+              "font_weight": "bold",
+              "item_link": "#",
+              "link_text": "Shop Now",
+              "bg_color": "rgba(0,0,0,0)",
+              "border_color": "rgba(0,0,0,0)",
+              "title_color": "",
+              "sub_text_color": ""
+            }
+          },
+          "be431d99-a6f4-4702-a34e-630740db7c6f": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image_125.png",
+              "img_width_px": "355",
+              "bottom_percentage": 25,
+              "title_bottom_percentage": 0,
+              "bg_image": "shopify:\/\/shop_images\/item_bg.png",
+              "size_border": 0,
+              "custom_svg": "",
+              "item_title": "tin hot chocolate dark",
+              "sub_text": "",
+              "title_font_size": 12,
+              "font_weight": "bold",
+              "item_link": "#",
+              "link_text": "Shop Now",
+              "bg_color": "rgba(0,0,0,0)",
+              "border_color": "rgba(0,0,0,0)",
+              "title_color": "#121212",
+              "sub_text_color": ""
+            }
+          }
+        },
+        "block_order": [
+          "198bcec8-074f-4e29-b025-1426fd492282",
+          "c1c9f45c-3e7d-48f3-864a-527f3c93cbef",
+          "be431d99-a6f4-4702-a34e-630740db7c6f"
+        ],
+        "settings": {
+          "wide_display": true,
+          "enable_featured_items": true,
+          "enable_btn_svg": true,
+          "image": "shopify:\/\/shop_images\/best_truffles.png",
+          "pretext": "<p>HOME OF THE WORLD’S BEST TRUFFLES<\/p>",
+          "title": "the Home of The World's",
+          "heading_font_size": 58,
+          "subtitle": "",
+          "caption_background": false,
+          "caption_background_transparency": false,
+          "button1": "",
+          "button1_link": "",
+          "button2": "",
+          "button2_link": "",
+          "sign_text": "Best Truffles",
+          "under_sign_text": "<p>Master Chocolatier Iain Burnett has received over 45 regional<\/p><p>and international awards over the last decade<\/p>",
+          "text_position": "center",
+          "text_align": "center",
+          "pre_text_color": "#d6c7a3",
+          "heading_color": "#ffffff",
+          "sub_text_color": "#ffffff",
+          "sign_text_color": "#d6c7a3",
+          "under_sign_text_color": "#ffffff",
+          "btn_label_color": "",
+          "btn_bg_color": "",
+          "mobile_image_crop": "none",
+          "mobile_text_below_image": true,
+          "mobile_text_color": "",
+          "css_class": "home_world",
+          "custom_css": ""
+        }
+      },
+      "1489285367207": {
+        "type": "newsletter",
+        "settings": {
+          "wide_display": true,
+          "display_first_name": false,
+          "display_last_name": false,
+          "top_image": "shopify:\/\/shop_images\/image_139.png",
+          "newsletter_pre_title": "SUBSCRIBE TO OUR NEWSLETTER",
+          "newsletter_title": "Be the first to hear the latest news",
+          "newsletter_text": "",
+          "heading_font_size": 58,
+          "heading_color": "#ffffff",
+          "pretext_color": "#d6c7a3",
+          "button_label_color": "#ffffff",
+          "button_bg_color": "#8f1028",
+          "newsletter_section_text_align": "center",
+          "image": "shopify:\/\/shop_images\/Rectangle_280.jpg",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1489285418400": {
+        "type": "featured-blog",
+        "settings": {
+          "title": "Our Blog",
+          "view_all_title": "READ MORE ARTICLES",
+          "view_all_link": "shopify:\/\/blogs\/news",
+          "blog_widget_select": "news",
+          "home_page_articles": 4,
+          "blog_tags": false,
+          "blog_author": false,
+          "read_time": true,
+          "blog_date": true,
+          "blog_comment_count": true,
+          "read_more_link": false,
+          "excerpt_display": "full_excerpt",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "16279459264ca11dda": {
+        "type": "video",
+        "disabled": true,
+        "settings": {
+          "wide_display": true,
+          "aspect_ratio": "16:9",
+          "autoplay": false,
+          "autoloop": true,
+          "mute_video": false,
+          "show_controls": true,
+          "video_dark_overlay": false,
+          "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+          "html5_video": "",
+          "image": "shopify:\/\/shop_images\/IBHC_Iain_in_shop_4.jpg",
+          "display_text_over_video": false,
+          "preheading": "",
+          "heading": "",
+          "subheading": "",
+          "caption_background": false,
+          "caption_background_transparency": false,
+          "button_label": "Watch Video",
+          "button_link": "",
+          "play_button_bg_color": "#ffffff",
+          "play_button_arrow_color": "#7d241e",
+          "play_button_label_color": "#ffffff",
+          "text_position": "center",
+          "text_align": "center",
+          "mobile_text_below_image": true,
+          "mobile_text_color": "",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "search-template": {
+        "type": "search-template",
+        "settings": {
+          "image_darken": false,
+          "search_breadcrumb": true,
+          "search_term": "Search...",
+          "products_per_row": 3,
+          "pagination_limit": 48,
+          "blog_author": false,
+          "read_more_link": true,
+          "blog_date": true,
+          "toggle": false
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "wide_display": true,
+          "display_first_name": false,
+          "display_last_name": false,
+          "newsletter_pre_title": "SUBSCRIBE TO OUR NEWSLETTER",
+          "newsletter_title": "Subscribe",
+          "newsletter_text": "<p>Sign up to get the latest on sales, new releases and more …<\/p>",
+          "heading_color": "",
+          "pretext_color": "",
+          "newsletter_section_text_align": "center",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "display_special_instructions": false,
+          "display_savings": true,
+          "cart_message": ""
+        }
+      },
+      "1628013742da0cc91d": {
+        "type": "video-with-text",
+        "blocks": {
+          "eefdd57e-8af5-4fdf-9910-72f0ff786eca": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_261.png",
+              "img_width_px": "270",
+              "bottom_percentage": 25,
+              "title_bottom_percentage": 10,
+              "size_border": 12,
+              "title_font_size": 18,
+              "font_weight": "normal",
+              "custom_svg": "",
+              "item_title": "Award winning <br>selection",
+              "sub_text": "£39.95",
+              "item_link": "",
+              "bg_color": "#ffffff",
+              "border_color": "#1e272d",
+              "title_color": "#121212",
+              "sub_text_color": "#7d241e"
+            }
+          },
+          "8507ce33-d35a-409a-8855-6eac76eb309b": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image_137.png",
+              "img_width_px": "162",
+              "bottom_percentage": 46,
+              "title_bottom_percentage": 10,
+              "bg_image": "shopify:\/\/shop_images\/Rectangle_264.png",
+              "size_border": 12,
+              "title_font_size": 18,
+              "font_weight": "normal",
+              "custom_svg": "",
+              "item_title": "Discover our<br>selection boxes",
+              "sub_text": "",
+              "item_link": "",
+              "bg_color": "",
+              "border_color": "#7d241e",
+              "title_color": "#121212",
+              "sub_text_color": ""
+            }
+          },
+          "b7c3455b-0cfd-4ee9-8dd3-1474ac306130": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image_129.png",
+              "img_width_px": "320",
+              "bottom_percentage": 29,
+              "title_bottom_percentage": 10,
+              "size_border": 12,
+              "title_font_size": 18,
+              "font_weight": "normal",
+              "custom_svg": "",
+              "item_title": "FLORENTINES<br>BOX",
+              "sub_text": "£39.95",
+              "item_link": "",
+              "bg_color": "#ffffff",
+              "border_color": "#1e272d",
+              "title_color": "#121212",
+              "sub_text_color": "#7d241e"
+            }
+          }
+        },
+        "block_order": [
+          "eefdd57e-8af5-4fdf-9910-72f0ff786eca",
+          "8507ce33-d35a-409a-8855-6eac76eb309b",
+          "b7c3455b-0cfd-4ee9-8dd3-1474ac306130"
+        ],
+        "settings": {
+          "wide_display": true,
+          "enable_featured_items": true,
+          "small_image": "",
+          "symbole_icon": "shopify:\/\/shop_images\/image_140.png",
+          "area_preheading": "",
+          "area_title": "Award-winning<br>Master Chocolatier",
+          "area_subheading": "<p>Iain Burnett trained under Master Chocolatiers of the<\/p><p>Belgian, Swiss and French schools, and is known for his<\/p><p>world-class Velvet Truffle and range of spiced pralines.  <\/p>",
+          "area_sign_text": "-Iain Burnett",
+          "area_button_label": "",
+          "area_button_link": "#",
+          "area_text_align": "center",
+          "pre_text_color": "",
+          "heading_color": "",
+          "sub_text_color": "",
+          "sign_text_color": "#d6c7a3",
+          "btn_label_color": "",
+          "btn_bg_color": "",
+          "aspect_ratio": "16:9",
+          "autoplay": false,
+          "autoloop": true,
+          "mute_video": false,
+          "show_controls": true,
+          "video_dark_overlay": false,
+          "iframe_video": "",
+          "html5_video": "",
+          "background_image": "shopify:\/\/shop_images\/background.png",
+          "foreground_image": "shopify:\/\/shop_images\/foreground.png",
+          "display_text_over_video": false,
+          "preheading": "",
+          "heading": "",
+          "subheading": "",
+          "caption_background": false,
+          "caption_background_transparency": false,
+          "button_label": "Watch Video",
+          "button_link": "",
+          "play_button_bg_color": "#7d241e",
+          "play_button_arrow_color": "#ffffff",
+          "play_button_label_color": "#7d241e",
+          "text_position": "left",
+          "text_align": "center",
+          "mobile_text_below_image": true,
+          "mobile_text_color": "",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "16280875467050c279": {
+        "type": "image-text",
+        "blocks": {
+          "16280875467050c279-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/section_1.png",
+              "image_crop": "none",
+              "pre_text": "GIFT IDEAS",
+              "title": "Birthdays and Special Occasions",
+              "text": "<p>Iain Burnett trained under Master Chocolatiers of the Belgian, Swiss and French schools, and is known for his world-class Velvet Truffle and range of spiced pralines.  <\/p>",
+              "button_label": "",
+              "link": "#",
+              "enable_product_item": true,
+              "product_image": "shopify:\/\/shop_images\/Rectangle_256.png",
+              "item_title": "Award winning selection",
+              "item_sub_text": "£39.95",
+              "item_link": "#",
+              "bg_color": "",
+              "pre_text_color": "#d6c7a3",
+              "text_color": "#ffffff",
+              "item_image_bg_color": "#d6c7a3",
+              "item_text_part_bg_color": "#ffffff"
+            }
+          },
+          "16280875467050c279-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/section_2.png",
+              "image_crop": "none",
+              "pre_text": "Chocolate Tasting Flights & Pairings",
+              "title": "Whisky & Chocolate Pairings",
+              "text": "<p>Enjoy a rich, sensory experience with Iain's unique audio-guided Chocolate Tasting Flights and learn about the art of a world-class chocolatier. <\/p>",
+              "button_label": "",
+              "link": "#",
+              "enable_product_item": true,
+              "product_image": "shopify:\/\/shop_images\/image_120.png",
+              "item_title": "Award winning selection",
+              "item_sub_text": "£39.95",
+              "item_link": "#",
+              "bg_color": "",
+              "pre_text_color": "#d6c7a3",
+              "text_color": "#ffffff",
+              "item_image_bg_color": "#d6c7a3",
+              "item_text_part_bg_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "16280875467050c279-0",
+          "16280875467050c279-1"
+        ],
+        "settings": {
+          "wide_display": true,
+          "bg_image": "shopify:\/\/shop_images\/Rectangle_231.jpg",
+          "bg_space_size": 32,
+          "image_part_width": 53,
+          "margin_top": 20,
+          "image_part_padding": 60,
+          "featured_links_per_row": "1",
+          "frontpage_text_align": "left",
+          "frontpage_image_position": "row-reverse",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "16280890322589efc2": {
+        "type": "logo-bar",
+        "blocks": {
+          "16280890322589efc2-0": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Awards_-_AoC_Gold_1.png",
+              "link": ""
+            }
+          },
+          "16280890322589efc2-1": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Awards_-_ICA_Gold_2015_1.png",
+              "link": ""
+            }
+          },
+          "16280890322589efc2-2": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Awards_-_ICA_Gold_2016_1.png",
+              "link": ""
+            }
+          },
+          "16280890322589efc2-3": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Awards_-_GTA_2017_1.png",
+              "link": ""
+            }
+          },
+          "213adc4f-112f-48ae-b81a-ff2833698080": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Awards_-_ICA_Gold_2015_1.png",
+              "link": ""
+            }
+          },
+          "4f7dc876-794d-44cc-a29d-f5a3bdf01ab9": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Awards_-_AoC_Gold_1.png",
+              "link": ""
+            }
+          },
+          "10ba03c9-f5d8-4ef7-b6c9-894c40e37821": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Awards_-_ICA_Gold_2016_1.png",
+              "link": ""
+            }
+          },
+          "e1bc71dd-1595-4366-93df-2637ec3d7026": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Awards_-_GTA_2017_1.png",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "16280890322589efc2-0",
+          "16280890322589efc2-1",
+          "16280890322589efc2-2",
+          "16280890322589efc2-3",
+          "213adc4f-112f-48ae-b81a-ff2833698080",
+          "4f7dc876-794d-44cc-a29d-f5a3bdf01ab9",
+          "10ba03c9-f5d8-4ef7-b6c9-894c40e37821",
+          "e1bc71dd-1595-4366-93df-2637ec3d7026"
+        ],
+        "settings": {
+          "title": "awards",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "16280890809f201984": {
+        "type": "featured-text",
+        "settings": {
+          "bg_image": "shopify:\/\/shop_images\/image_138.png",
+          "title1": "\"The best,",
+          "title2": "most luxurious chocolates",
+          "mid_heading_link": "",
+          "title3": "we have ever tasted\"",
+          "content": "<p>A collection of individual prize-winning Velvet Truffles<\/p><p> - The Award Winning box of 20 Chocolates<\/p>",
+          "title_font_size": 72,
+          "text_font_size": 16,
+          "button_label": "",
+          "button_link": "",
+          "text_size": "featured_text",
+          "text_alignment": "center",
+          "heading_color": "#d6c7a3",
+          "min_link_color": "#121212",
+          "text_color": "#000000",
+          "button_color": "",
+          "button_bg_color": "",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1628089156e1d93eb8": {
+        "type": "image-with-text-overlay",
+        "settings": {
+          "wide_display": true,
+          "enable_featured_items": true,
+          "enable_btn_svg": true,
+          "image": "shopify:\/\/shop_images\/chocolate_shop.png",
+          "pretext": "<p>VISIT US <\/p>",
+          "title": "The chocolate shop",
+          "heading_font_size": 42,
+          "subtitle": "<p>Browse the Chocolate and Gift shops, enjoy a guided <\/p><p>Chocolate Tasting and learn about the world of gourmet<\/p><p>chocolate. <\/p>",
+          "caption_background": false,
+          "caption_background_transparency": false,
+          "button1": "BOOK A VISIT",
+          "button1_link": "#",
+          "button2": "",
+          "button2_link": "",
+          "sign_text": "",
+          "under_sign_text": "",
+          "text_position": "left",
+          "text_align": "left",
+          "pre_text_color": "#ffffff",
+          "heading_color": "#ffffff",
+          "sub_text_color": "#ffffff",
+          "sign_text_color": "",
+          "under_sign_text_color": "",
+          "btn_label_color": "#ffffff",
+          "btn_bg_color": "",
+          "mobile_image_crop": "none",
+          "mobile_text_below_image": true,
+          "mobile_text_color": "",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "16281740344279aa92": {
+        "type": "divider",
+        "settings": {
+          "divider_spacing": 20,
+          "divider_border": false,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "16281802547e910570": {
+        "type": "divider",
+        "settings": {
+          "divider_spacing": 10,
+          "divider_border": false,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1628187275044f4efa": {
+        "type": "instagram-feed",
+        "settings": {
+          "pre_text": "JOIN OUR SOCIAL MEDIA",
+          "title": "Show us your  moments with",
+          "sign_text": "#highlandchocolatier",
+          "title_font_size": 42,
+          "text_font_size": 16,
+          "sign_font_size": 42,
+          "text_alignment": "center",
+          "heading_color": "#000000",
+          "sign_color": "#d6c7a3",
+          "text_color": "#000000"
+        }
+      },
+      "16281889699ce3559c": {
+        "type": "shop-service-columns",
+        "blocks": {
+          "16281889699ce3559c-0": {
+            "type": "text_block",
+            "settings": {
+              "svg_icon": "<svg width=\"41\" height=\"41\" viewbox=\"0 0 41 41\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect x=\"0.605469\" y=\"0.488281\" width=\"40\" height=\"40\" rx=\"20\" fill=\"white\"><\/rect>\n<path d=\"M25.4601 16.253L18.8489 22.9889L15.5732 20.6168C15.1576 20.3158 14.5759 20.4089 14.2743 20.8245C13.9733 21.2408 14.0663 21.8221 14.4823 22.1235L18.4067 24.965C18.5705 25.0837 18.7615 25.1417 18.952 25.1417C19.1944 25.1417 19.4353 25.0474 19.6157 24.8633L26.7876 17.5561C27.1475 17.1896 27.1422 16.6007 26.7751 16.2408C26.4092 15.8812 25.8201 15.8866 25.4601 16.253Z\" fill=\"black\"><\/path>\n<\/svg>",
+              "item_label": "scottish excellence",
+              "text_alignment": "center",
+              "border_style": "quote"
+            }
+          },
+          "16281889699ce3559c-1": {
+            "type": "text_block",
+            "settings": {
+              "svg_icon": "<svg width=\"41\" height=\"41\" viewbox=\"0 0 41 41\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect x=\"0.605469\" y=\"0.488281\" width=\"40\" height=\"40\" rx=\"20\" fill=\"white\"><\/rect>\n<path d=\"M20.5738 28.278C20.4957 28.2785 20.4182 28.2635 20.3459 28.2339C20.2736 28.2044 20.2078 28.1609 20.1523 28.1058L15.9545 23.9496C15.3484 23.3475 14.8674 22.6315 14.5392 21.8428C14.211 21.0541 14.042 20.2082 14.042 19.354C14.042 18.4997 14.211 17.6538 14.5392 16.8651C14.8674 16.0764 15.3484 15.3604 15.9545 14.7583C17.1847 13.5429 18.8445 12.8613 20.5738 12.8613C22.3032 12.8613 23.963 13.5429 25.1932 14.7583C25.7993 15.3604 26.2803 16.0764 26.6085 16.8651C26.9367 17.6538 27.1057 18.4997 27.1057 19.354C27.1057 20.2082 26.9367 21.0541 26.6085 21.8428C26.2803 22.6315 25.7993 23.3475 25.1932 23.9496L20.9954 28.1058C20.9399 28.1609 20.8741 28.2044 20.8018 28.2339C20.7294 28.2635 20.652 28.2785 20.5738 28.278ZM20.5738 14.028C19.1567 14.0245 17.7962 14.5841 16.7917 15.5836C16.2969 16.0753 15.9042 16.66 15.6363 17.304C15.3684 17.948 15.2304 18.6386 15.2304 19.3361C15.2304 20.0337 15.3684 20.7243 15.6363 21.3683C15.9042 22.0123 16.2969 22.597 16.7917 23.0886L20.5738 26.8471L24.356 23.0886C24.8508 22.597 25.2434 22.0123 25.5114 21.3683C25.7793 20.7243 25.9172 20.0337 25.9172 19.3361C25.9172 18.6386 25.7793 17.948 25.5114 17.304C25.2434 16.66 24.8508 16.0753 24.356 15.5836C23.3514 14.5841 21.991 14.0245 20.5738 14.028Z\" fill=\"black\"><\/path>\n<path d=\"M20.5742 22.3398C19.9871 22.3398 19.4131 22.1657 18.9249 21.8395C18.4367 21.5133 18.0562 21.0497 17.8315 20.5072C17.6068 19.9647 17.548 19.3678 17.6625 18.7919C17.7771 18.216 18.0598 17.6871 18.475 17.2719C18.8902 16.8567 19.4192 16.5739 19.995 16.4594C20.5709 16.3448 21.1678 16.4036 21.7103 16.6283C22.2528 16.853 22.7164 17.2335 23.0426 17.7217C23.3689 18.21 23.543 18.7839 23.543 19.3711C23.543 20.1585 23.2302 20.9136 22.6734 21.4703C22.1167 22.0271 21.3616 22.3398 20.5742 22.3398ZM20.5742 17.5898C20.2219 17.5898 19.8775 17.6943 19.5846 17.89C19.2917 18.0858 19.0634 18.364 18.9286 18.6894C18.7937 19.0149 18.7585 19.3731 18.8272 19.7186C18.8959 20.0641 19.0656 20.3815 19.3147 20.6306C19.5638 20.8797 19.8812 21.0494 20.2267 21.1181C20.5722 21.1868 20.9304 21.1516 21.2559 21.0168C21.5814 20.8819 21.8595 20.6536 22.0553 20.3607C22.251 20.0678 22.3555 19.7234 22.3555 19.3711C22.3555 18.8987 22.1678 18.4456 21.8338 18.1116C21.4997 17.7775 21.0466 17.5898 20.5742 17.5898Z\" fill=\"black\"><\/path>\n<\/svg>",
+              "item_label": "tracked from bean to bar",
+              "text_alignment": "center",
+              "border_style": "quote"
+            }
+          },
+          "ec153c31-3c6e-4a14-8019-a7303cad0ed2": {
+            "type": "text_block",
+            "settings": {
+              "svg_icon": "<svg width=\"40\" height=\"41\" viewbox=\"0 0 40 41\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect y=\"0.402344\" width=\"40\" height=\"40\" rx=\"20\" fill=\"white\"><\/rect>\n<path d=\"M17.8633 20.3064C17.3946 19.9971 16.7571 20.1096 16.4102 20.5502L14.7227 22.7439C14.2352 23.3064 13.7946 23.6158 13.429 23.6439C13.2321 23.6533 13.0446 23.5783 12.8665 23.4096C12.5946 23.1564 12.4352 22.7908 12.4352 22.3877V18.6658C12.4352 18.4689 12.304 18.2908 12.1165 18.2346C11.929 18.1783 11.7227 18.2439 11.6102 18.4127L8.83522 22.5189C8.61022 22.8564 8.52584 23.2783 8.61022 23.6814L9.79147 29.3627V29.7752C9.79147 30.0283 9.99772 30.2252 10.2415 30.2252H16.204C16.4383 30.2252 16.6352 30.0471 16.654 29.8127L16.8883 27.1877C17.0008 25.9314 17.3008 24.7033 17.7696 23.5502C17.8446 23.3627 17.9196 23.1752 17.9946 22.9971C18.154 22.6127 18.304 22.2564 18.4165 21.9658C18.6508 21.3564 18.4165 20.6721 17.8633 20.3064ZM17.5727 21.6564C17.4696 21.9471 17.3196 22.2846 17.1696 22.6502C17.0946 22.8283 17.0196 23.0158 16.9352 23.2033C16.429 24.4408 16.1102 25.7533 15.9883 27.1033L15.7915 29.3158H10.7008V29.3064C10.7008 29.2783 10.7008 29.2408 10.6915 29.2127L9.50084 23.4846C9.46334 23.3252 9.50084 23.1564 9.59459 23.0158L11.5446 20.1377V22.3783C11.5446 23.0252 11.8071 23.6439 12.2665 24.0658C12.6321 24.4033 13.054 24.5627 13.4946 24.5346C14.1227 24.4971 14.7696 24.0846 15.4446 23.3064L17.1508 21.0939C17.2071 21.0189 17.3102 21.0096 17.3852 21.0564C17.5633 21.1971 17.6477 21.4408 17.5727 21.6564Z\" fill=\"black\"><\/path>\n<path d=\"M29.6195 10.9883H13.3445C12.3508 10.9883 11.5352 11.7945 11.5352 12.7883V16.9602C11.5352 17.2133 11.7414 17.4102 11.9852 17.4102C12.2383 17.4102 12.4352 17.2039 12.4352 16.9602V12.7883C12.4352 12.2914 12.8383 11.8883 13.3352 11.8883H29.6102C30.107 11.8883 30.5102 12.2914 30.5102 12.7883V22.8758C30.5102 23.3727 30.107 23.7758 29.6102 23.7758H18.9414C18.6883 23.7758 18.4914 23.982 18.4914 24.2258C18.4914 24.4695 18.6977 24.6758 18.9414 24.6758H29.6195C30.6133 24.6758 31.4289 23.8695 31.4289 22.8758V12.7883C31.4289 11.7945 30.6133 10.9883 29.6195 10.9883Z\" fill=\"black\"><\/path>\n<path d=\"M23.5719 16.7085C21.7906 16.3804 20.2344 17.7679 20.2344 19.4929C20.2344 21.0491 21.5 22.3241 23.0656 22.3241C23.2344 22.3241 23.4031 22.3054 23.5719 22.2773C23.8156 22.2304 23.9844 21.996 23.9375 21.7523C23.8906 21.5085 23.6562 21.3398 23.4125 21.3866C23.3 21.4054 23.1781 21.4148 23.0656 21.4148C22.0062 21.4148 21.1437 20.5523 21.1437 19.4929C21.1437 18.4335 22.0062 17.571 23.0656 17.571C23.1781 17.571 23.2906 17.5804 23.4125 17.5991C23.6562 17.646 23.9 17.4773 23.9375 17.2335C23.975 16.9898 23.8156 16.7554 23.5719 16.7085Z\" fill=\"black\"><\/path>\n<path d=\"M26.5148 22.3148C28.0711 22.3148 29.3461 21.0492 29.3461 19.4836C29.3461 17.9273 28.0805 16.6523 26.5148 16.6523C24.9492 16.6523 23.6836 17.918 23.6836 19.4836C23.6836 21.0492 24.9492 22.3148 26.5148 22.3148ZM26.5148 17.5711C27.5742 17.5711 28.4367 18.4336 28.4367 19.493C28.4367 20.5523 27.5742 21.4148 26.5148 21.4148C25.4555 21.4148 24.593 20.5523 24.593 19.493C24.593 18.4336 25.4555 17.5711 26.5148 17.5711Z\" fill=\"black\"><\/path>\n<\/svg>",
+              "item_label": "100% secure payment",
+              "text_alignment": "center",
+              "border_style": "quote"
+            }
+          },
+          "f526fd1b-7e7a-408f-b521-4517ba4b17fa": {
+            "type": "text_block",
+            "settings": {
+              "svg_icon": "<svg width=\"41\" height=\"41\" viewbox=\"0 0 41 41\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect x=\"0.605469\" y=\"0.488281\" width=\"40\" height=\"40\" rx=\"20\" fill=\"white\"><\/rect>\n<path d=\"M31.951 17.6433C31.8422 17.4878 31.6633 17.3945 31.4767 17.3945H27.8606V15.8547C27.8606 15.5359 27.5962 15.2715 27.2774 15.2715H14.1741C13.8552 15.2715 13.5908 15.5359 13.5908 15.8547V25.2798C13.5908 25.5986 13.8552 25.863 14.1741 25.863H15.8227C16.1259 26.9206 17.1058 27.706 18.2567 27.706C19.4076 27.706 20.3874 26.9284 20.6907 25.863H27.153C27.4562 26.9206 28.4361 27.706 29.587 27.706C30.7379 27.706 31.7177 26.9284 32.021 25.863H33.2264C33.5452 25.863 33.8096 25.5986 33.8096 25.2798V20.4817C33.8096 20.3573 33.7707 20.2406 33.7007 20.1473L31.951 17.6433ZM32.6509 20.6528H30.038V18.5687H31.1812L32.6509 20.6528ZM14.7573 16.4457H26.6941V24.7043H20.7452C20.5196 23.5301 19.4932 22.6436 18.2567 22.6436C17.0202 22.6436 15.986 23.5301 15.7682 24.7043H14.7573V16.4457ZM18.2567 26.5396C17.5024 26.5396 16.888 25.9252 16.888 25.1709C16.888 24.4166 17.5024 23.8023 18.2567 23.8023C19.011 23.8023 19.6254 24.4166 19.6254 25.1709C19.6254 25.9252 19.011 26.5396 18.2567 26.5396ZM29.5948 26.5396C28.8405 26.5396 28.2261 25.9252 28.2261 25.1709C28.2261 24.4166 28.8405 23.8023 29.5948 23.8023C30.3491 23.8023 30.9634 24.4166 30.9634 25.1709C30.9634 25.9252 30.3491 26.5396 29.5948 26.5396ZM32.0832 24.7043C31.8577 23.5301 30.8312 22.6436 29.5948 22.6436C28.926 22.6436 28.3117 22.908 27.8606 23.3357V18.5687H28.8638V21.236C28.8638 21.5549 29.1282 21.8193 29.447 21.8193H32.6587V24.7043H32.0832Z\" fill=\"black\"><\/path>\n<path d=\"M7.98265 16.4458H12.1431C12.4619 16.4458 12.7263 16.1814 12.7263 15.8625C12.7263 15.5437 12.4619 15.2793 12.1431 15.2793H7.98265C7.66381 15.2793 7.39941 15.5437 7.39941 15.8625C7.39941 16.1814 7.66381 16.4458 7.98265 16.4458Z\" fill=\"black\"><\/path>\n<path d=\"M12.1436 17.4023H8.93968C8.62084 17.4023 8.35645 17.6667 8.35645 17.9856C8.35645 18.3044 8.62084 18.5688 8.93968 18.5688H12.1436C12.4624 18.5688 12.7268 18.3044 12.7268 17.9856C12.7268 17.6667 12.4702 17.4023 12.1436 17.4023Z\" fill=\"black\"><\/path>\n<path d=\"M12.1412 19.5254H10.1194C9.80053 19.5254 9.53613 19.7898 9.53613 20.1086C9.53613 20.4275 9.80053 20.6919 10.1194 20.6919H12.1412C12.4601 20.6919 12.7245 20.4275 12.7245 20.1086C12.7245 19.7898 12.4679 19.5254 12.1412 19.5254Z\" fill=\"black\"><\/path>\n<path d=\"M12.1435 21.6484H11.4436C11.1248 21.6484 10.8604 21.9128 10.8604 22.2317C10.8604 22.5505 11.1248 22.8149 11.4436 22.8149H12.1435C12.4623 22.8149 12.7267 22.5505 12.7267 22.2317C12.7267 21.9128 12.4701 21.6484 12.1435 21.6484Z\" fill=\"black\"><\/path>\n<\/svg>",
+              "item_label": "free delivery over $55",
+              "text_alignment": "center",
+              "border_style": "none"
+            }
+          }
+        },
+        "block_order": [
+          "16281889699ce3559c-0",
+          "16281889699ce3559c-1",
+          "ec153c31-3c6e-4a14-8019-a7303cad0ed2",
+          "f526fd1b-7e7a-408f-b521-4517ba4b17fa"
+        ],
+        "settings": {
+          "bg_color": "#d6c7a3",
+          "text_color": ""
+        }
+      },
+      "page-about-us-template": {
+        "type": "page-about-us-template",
+        "blocks": {
+          "page-about-us-template-0": {
+            "type": "image_with_text_overlay",
+            "settings": {
+              "wide_display": true,
+              "pretext": "<p>Introducing Your<\/p>",
+              "title": "Page Details Template",
+              "subtitle": "<p>Let's Get Started!<\/p>",
+              "caption_background": false,
+              "caption_background_transparency": false,
+              "text_position": "center",
+              "text_align": "center",
+              "button1": "Button",
+              "button1_link": "",
+              "button1_highlight": false,
+              "button2": "",
+              "button2_link": "",
+              "button2_highlight": false,
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "mobile_text_color": ""
+            }
+          },
+          "page-about-us-template-1": {
+            "type": "divider",
+            "settings": {
+              "divider_spacing": 20,
+              "divider_border": false
+            }
+          },
+          "page-about-us-template-2": {
+            "type": "rich_text_and_image",
+            "settings": {
+              "title": "Talk about your brand",
+              "content": "<p>Use this text to share information about your brand with your customers.<\/p><p>Describe a product, share announcements, or welcome customers to your store.<\/p>",
+              "text_size": "featured_text",
+              "text_alignment": "center",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "page-about-us-template-3": {
+            "type": "divider",
+            "settings": {
+              "divider_spacing": 10,
+              "divider_border": false
+            }
+          },
+          "page-about-us-template-4": {
+            "type": "featured_collection",
+            "settings": {
+              "title": "Featured collection",
+              "collection_description": false,
+              "collection": "",
+              "collection_style": "grid",
+              "products_per": 4,
+              "products_limit": 8
+            }
+          },
+          "page-about-us-template-5": {
+            "type": "divider",
+            "settings": {
+              "divider_spacing": 10,
+              "divider_border": false
+            }
+          },
+          "page-about-us-template-6": {
+            "type": "featured_video",
+            "settings": {
+              "wide_display": true,
+              "aspect_ratio": "16:9",
+              "autoplay": false,
+              "autoloop": true,
+              "mute_video": false,
+              "show_controls": true,
+              "video_dark_overlay": false,
+              "iframe_video": "",
+              "html5_video": "",
+              "display_text_over_video": false,
+              "preheading": "",
+              "heading": "Video Section",
+              "subheading": "",
+              "text_position": "center",
+              "text_align": "center",
+              "caption_background": false,
+              "caption_background_transparency": false,
+              "button1_label": "Play Video",
+              "button1_link": "",
+              "button1_highlight": false,
+              "button2_label": "",
+              "button2_link": "",
+              "button2_highlight": false,
+              "mobile_text_below_image": true,
+              "mobile_text_color": ""
+            }
+          },
+          "page-about-us-template-7": {
+            "type": "image_with_text",
+            "settings": {
+              "wide_display": false,
+              "frontpage_text_align": "left",
+              "frontpage_image_position": "row",
+              "image_crop": "none",
+              "title": "Your headline",
+              "text": "<p>Promotion description appears here.<\/p>",
+              "link": "",
+              "button_label": "View all"
+            }
+          },
+          "page-about-us-template-8": {
+            "type": "image_with_text",
+            "settings": {
+              "wide_display": false,
+              "frontpage_text_align": "left",
+              "frontpage_image_position": "row-reverse",
+              "image_crop": "none",
+              "title": "Your headline",
+              "text": "<p>Promotion description appears here.<\/p>",
+              "link": "",
+              "button_label": "View all"
+            }
+          },
+          "page-about-us-template-9": {
+            "type": "divider",
+            "settings": {
+              "divider_spacing": 10,
+              "divider_border": false
+            }
+          },
+          "page-about-us-template-10": {
+            "type": "blog_posts",
+            "settings": {
+              "title": "Blog posts",
+              "blog_widget_select": "",
+              "home_page_articles": 3,
+              "blog_tags": false,
+              "blog_author": false,
+              "read_time": true,
+              "blog_date": true,
+              "blog_comment_count": true,
+              "read_more_link": true,
+              "excerpt_display": "full_excerpt"
+            }
+          },
+          "page-about-us-template-11": {
+            "type": "divider",
+            "settings": {
+              "divider_spacing": 10,
+              "divider_border": false
+            }
+          },
+          "page-about-us-template-12": {
+            "type": "contact_form",
+            "settings": {
+              "contact_heading": "Get in touch",
+              "contact_subheading": "Leave a message",
+              "contact_content": "<p>Use this text to include important information that you'd like your customers to be aware of when contacting you. You could include shop hours, email response times, other ways to contact you, or just some friendly text to encourage your customers to reach out.<\/p>",
+              "contact_text_position": "left",
+              "contact_text_alignment": "left"
+            }
+          },
+          "page-about-us-template-13": {
+            "type": "divider",
+            "settings": {
+              "divider_spacing": 10,
+              "divider_border": false
+            }
+          },
+          "page-about-us-template-14": {
+            "type": "map",
+            "settings": {
+              "map_wide_display": true,
+              "map_address": "",
+              "map_height": 400,
+              "zoom_level": 16,
+              "api_key": "",
+              "show_pin": true,
+              "map_style": "default"
+            }
+          },
+          "page-about-us-template-15": {
+            "type": "divider",
+            "settings": {
+              "divider_spacing": 20,
+              "divider_border": false
+            }
+          },
+          "page-about-us-template-16": {
+            "type": "image_gallery",
+            "settings": {
+              "wide_display": true
+            }
+          },
+          "page-about-us-template-17": {
+            "type": "divider",
+            "settings": {
+              "divider_spacing": 20,
+              "divider_border": false
+            }
+          },
+          "page-about-us-template-18": {
+            "type": "quote",
+            "settings": {
+              "page_quote": "<p><i>40% of online shoppers abandon a site that takes more than 3 seconds to load<\/i><\/p>"
+            }
+          },
+          "page-about-us-template-19": {
+            "type": "divider",
+            "settings": {
+              "divider_spacing": 20,
+              "divider_border": false
+            }
+          }
+        },
+        "block_order": [
+          "page-about-us-template-0",
+          "page-about-us-template-1",
+          "page-about-us-template-2",
+          "page-about-us-template-3",
+          "page-about-us-template-4",
+          "page-about-us-template-5",
+          "page-about-us-template-6",
+          "page-about-us-template-7",
+          "page-about-us-template-8",
+          "page-about-us-template-9",
+          "page-about-us-template-10",
+          "page-about-us-template-11",
+          "page-about-us-template-12",
+          "page-about-us-template-13",
+          "page-about-us-template-14",
+          "page-about-us-template-15",
+          "page-about-us-template-16",
+          "page-about-us-template-17",
+          "page-about-us-template-18",
+          "page-about-us-template-19"
+        ],
+        "settings": {}
+      },
+      "about-us-image-with-text-overlay": {
+        "type": "about-us-image-with-text-overlay",
+        "settings": {
+          "wide_display": true,
+          "enable_btn_svg": true,
+          "image": "shopify:\/\/shop_images\/image_136_1.png",
+          "pretext": "",
+          "sign_text": "About us",
+          "title": "Highland chocolatier",
+          "heading_font_size": 56,
+          "subtitle": "<p>Award-winning Master Chocolatier Iain Burnett trained under Master Chocolatiers of the Belgian, Swiss and French schools, and is known for his world-class Velvet Truffle and range of spiced pralines.<\/p>",
+          "caption_background": false,
+          "caption_background_transparency": false,
+          "button": "",
+          "button_link": "#",
+          "under_button_text": "<p>EXPLORE OUR STORY<\/p>",
+          "text_position": "center",
+          "text_align": "center",
+          "pre_text_color": "#20292f",
+          "heading_color": "#20292f",
+          "sub_text_color": "#20292f",
+          "sign_text_color": "#d6c7a3",
+          "under_buttton_text_color": "",
+          "btn_label_color": "",
+          "btn_bg_color": "",
+          "mobile_image_crop": "none",
+          "mobile_text_below_image": true,
+          "mobile_text_color": "",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "about-us-image-text": {
+        "type": "about-us-image-text",
+        "blocks": {
+          "6d845559-1278-4c11-8729-2c59e554bd79": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_287_1.jpg",
+              "image_crop": "none",
+              "logo_image": "shopify:\/\/shop_images\/image_144.png",
+              "pre_text": "",
+              "title": "Award-winning Master Chocolatier",
+              "text": "<p>Iain Burnett trained under Master Chocolatiers of the Belgian, Swiss and French schools, and is known for his world-class Velvet Truffle and range of spiced pralines.  <\/p>",
+              "sign_text": "-Iain Burnett",
+              "button_label": "View all",
+              "link": "",
+              "sign_text_font_size": 70,
+              "bg_color": "",
+              "pre_text_color": "#d6c7a3",
+              "text_color": "#ffffff",
+              "sign_text_color": "#d6c7a3",
+              "item_image_bg_color": "#d6c7a3",
+              "item_text_part_bg_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "6d845559-1278-4c11-8729-2c59e554bd79"
+        ],
+        "settings": {
+          "wide_display": true,
+          "bg_image": "shopify:\/\/shop_images\/Rectangle_288_2.jpg",
+          "bg_space_size": 30,
+          "image_part_width": 50,
+          "margin_top": 70,
+          "image_part_padding": 60,
+          "featured_links_per_row": "1",
+          "frontpage_text_align": "center",
+          "frontpage_image_position": "row-reverse",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "about-us-video": {
+        "type": "about-us-video",
+        "settings": {
+          "wide_display": true,
+          "aspect_ratio": "16:9",
+          "autoplay": false,
+          "autoloop": true,
+          "mute_video": false,
+          "show_controls": true,
+          "video_dark_overlay": false,
+          "iframe_video": "",
+          "html5_video": "",
+          "image": "shopify:\/\/shop_images\/IBHC_Iain_in_shop_4.jpg",
+          "display_text_over_video": false,
+          "preheading": "",
+          "heading": "",
+          "subheading": "",
+          "caption_background": false,
+          "caption_background_transparency": false,
+          "button_label": "Watch Video",
+          "button_link": "",
+          "play_button_bg_color": "#ffffff",
+          "play_button_arrow_color": "#7d241e",
+          "play_button_label_color": "#ffffff",
+          "text_position": "center",
+          "text_align": "center",
+          "mobile_text_below_image": true,
+          "mobile_text_color": "",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "about-us-featured-text": {
+        "type": "about-us-featured-text",
+        "settings": {
+          "display_featured_divider": true,
+          "bg_image": "shopify:\/\/shop_images\/image_138.png",
+          "title": "OUR HISTORY",
+          "content": "<p>Iain Burnett trained under Master Chocolatiers of the Belgian,<\/p><p> Swiss and French schools, and is known for his world-class <\/p><p>Velvet Truffle and range of spiced pralines.  <\/p>",
+          "title_font_size": 72,
+          "text_font_size": 16,
+          "button_label": "",
+          "button_link": "",
+          "text_below_button": "FIRST IDEA",
+          "image": "shopify:\/\/shop_images\/AA_Enrobed_Boxes_closed_1.jpg",
+          "img_margin_top": 160,
+          "text_size": "featured_text",
+          "text_alignment": "center",
+          "heading_color": "",
+          "min_link_color": "",
+          "text_color": "",
+          "button_color": "",
+          "button_bg_color": "",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "about-us-newsletter": {
+        "type": "about-us-newsletter",
+        "settings": {
+          "wide_display": true,
+          "display_first_name": false,
+          "display_last_name": false,
+          "newsletter_pre_title": "SUBSCRIBE TO OUR NEWSLETTER",
+          "newsletter_title": "Be the first to hear the latest news",
+          "heading_font_size": 58,
+          "newsletter_text": "",
+          "heading_color": "#ffffff",
+          "pretext_color": "#ffffff",
+          "button_label_color": "#7d241e",
+          "button_bg_color": "#ffffff",
+          "newsletter_section_text_align": "center",
+          "image": "shopify:\/\/shop_images\/Rectangle_252.png",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "shop-service-columns": {
+        "type": "shop-service-columns",
+        "blocks": {
+          "41602aad-844c-4153-8c79-26eae5422ae5": {
+            "type": "text_block",
+            "settings": {
+              "svg_icon": "<svg width=\"41\" height=\"41\" viewbox=\"0 0 41 41\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect x=\"0.605469\" y=\"0.488281\" width=\"40\" height=\"40\" rx=\"20\" fill=\"white\"><\/rect>\n<path d=\"M25.4601 16.253L18.8489 22.9889L15.5732 20.6168C15.1576 20.3158 14.5759 20.4089 14.2743 20.8245C13.9733 21.2408 14.0663 21.8221 14.4823 22.1235L18.4067 24.965C18.5705 25.0837 18.7615 25.1417 18.952 25.1417C19.1944 25.1417 19.4353 25.0474 19.6157 24.8633L26.7876 17.5561C27.1475 17.1896 27.1422 16.6007 26.7751 16.2408C26.4092 15.8812 25.8201 15.8866 25.4601 16.253Z\" fill=\"black\"><\/path>\n<\/svg>",
+              "item_label": "scottish excellence",
+              "text_alignment": "center",
+              "border_style": "quote"
+            }
+          },
+          "50f882cf-1b48-4680-a3ca-3095c2885dcb": {
+            "type": "text_block",
+            "settings": {
+              "svg_icon": "<svg width=\"41\" height=\"41\" viewbox=\"0 0 41 41\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect x=\"0.605469\" y=\"0.488281\" width=\"40\" height=\"40\" rx=\"20\" fill=\"white\"><\/rect>\n<path d=\"M20.5738 28.278C20.4957 28.2785 20.4182 28.2635 20.3459 28.2339C20.2736 28.2044 20.2078 28.1609 20.1523 28.1058L15.9545 23.9496C15.3484 23.3475 14.8674 22.6315 14.5392 21.8428C14.211 21.0541 14.042 20.2082 14.042 19.354C14.042 18.4997 14.211 17.6538 14.5392 16.8651C14.8674 16.0764 15.3484 15.3604 15.9545 14.7583C17.1847 13.5429 18.8445 12.8613 20.5738 12.8613C22.3032 12.8613 23.963 13.5429 25.1932 14.7583C25.7993 15.3604 26.2803 16.0764 26.6085 16.8651C26.9367 17.6538 27.1057 18.4997 27.1057 19.354C27.1057 20.2082 26.9367 21.0541 26.6085 21.8428C26.2803 22.6315 25.7993 23.3475 25.1932 23.9496L20.9954 28.1058C20.9399 28.1609 20.8741 28.2044 20.8018 28.2339C20.7294 28.2635 20.652 28.2785 20.5738 28.278ZM20.5738 14.028C19.1567 14.0245 17.7962 14.5841 16.7917 15.5836C16.2969 16.0753 15.9042 16.66 15.6363 17.304C15.3684 17.948 15.2304 18.6386 15.2304 19.3361C15.2304 20.0337 15.3684 20.7243 15.6363 21.3683C15.9042 22.0123 16.2969 22.597 16.7917 23.0886L20.5738 26.8471L24.356 23.0886C24.8508 22.597 25.2434 22.0123 25.5114 21.3683C25.7793 20.7243 25.9172 20.0337 25.9172 19.3361C25.9172 18.6386 25.7793 17.948 25.5114 17.304C25.2434 16.66 24.8508 16.0753 24.356 15.5836C23.3514 14.5841 21.991 14.0245 20.5738 14.028Z\" fill=\"black\"><\/path>\n<path d=\"M20.5742 22.3398C19.9871 22.3398 19.4131 22.1657 18.9249 21.8395C18.4367 21.5133 18.0562 21.0497 17.8315 20.5072C17.6068 19.9647 17.548 19.3678 17.6625 18.7919C17.7771 18.216 18.0598 17.6871 18.475 17.2719C18.8902 16.8567 19.4192 16.5739 19.995 16.4594C20.5709 16.3448 21.1678 16.4036 21.7103 16.6283C22.2528 16.853 22.7164 17.2335 23.0426 17.7217C23.3689 18.21 23.543 18.7839 23.543 19.3711C23.543 20.1585 23.2302 20.9136 22.6734 21.4703C22.1167 22.0271 21.3616 22.3398 20.5742 22.3398ZM20.5742 17.5898C20.2219 17.5898 19.8775 17.6943 19.5846 17.89C19.2917 18.0858 19.0634 18.364 18.9286 18.6894C18.7937 19.0149 18.7585 19.3731 18.8272 19.7186C18.8959 20.0641 19.0656 20.3815 19.3147 20.6306C19.5638 20.8797 19.8812 21.0494 20.2267 21.1181C20.5722 21.1868 20.9304 21.1516 21.2559 21.0168C21.5814 20.8819 21.8595 20.6536 22.0553 20.3607C22.251 20.0678 22.3555 19.7234 22.3555 19.3711C22.3555 18.8987 22.1678 18.4456 21.8338 18.1116C21.4997 17.7775 21.0466 17.5898 20.5742 17.5898Z\" fill=\"black\"><\/path>\n<\/svg>",
+              "item_label": "tracked from bean to bar",
+              "text_alignment": "center",
+              "border_style": "quote"
+            }
+          },
+          "f6b8b781-e738-4f51-a1d3-245a641d006b": {
+            "type": "text_block",
+            "settings": {
+              "svg_icon": "<svg width=\"41\" height=\"41\" viewbox=\"0 0 41 41\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect x=\"0.605469\" y=\"0.488281\" width=\"40\" height=\"40\" rx=\"20\" fill=\"white\"><\/rect>\n<g clip-path=\"url(#clip0)\">\n<path d=\"M18.4688 20.3904C18.0001 20.081 17.3626 20.1935 17.0157 20.6342L15.3282 22.8279C14.8407 23.3904 14.4001 23.6998 14.0344 23.7279C13.8376 23.7373 13.6501 23.6623 13.4719 23.4935C13.2001 23.2404 13.0407 22.8748 13.0407 22.4717V18.7498C13.0407 18.5529 12.9094 18.3748 12.7219 18.3185C12.5344 18.2623 12.3282 18.3279 12.2157 18.4967L9.44069 22.6029C9.21569 22.9404 9.13131 23.3623 9.21569 23.7654L10.3969 29.4467V29.8592C10.3969 30.1123 10.6032 30.3092 10.8469 30.3092H16.8094C17.0438 30.3092 17.2407 30.131 17.2594 29.8967L17.4938 27.2717C17.6063 26.0154 17.9063 24.7873 18.3751 23.6342C18.4501 23.4467 18.5251 23.2592 18.6001 23.081C18.7594 22.6967 18.9094 22.3404 19.0219 22.0498C19.2563 21.4404 19.0219 20.756 18.4688 20.3904ZM18.1782 21.7404C18.0751 22.031 17.9251 22.3685 17.7751 22.7342C17.7001 22.9123 17.6251 23.0998 17.5407 23.2873C17.0344 24.5248 16.7157 25.8373 16.5938 27.1873L16.3969 29.3998H11.3063V29.3904C11.3063 29.3623 11.3063 29.3248 11.2969 29.2967L10.1063 23.5685C10.0688 23.4092 10.1063 23.2404 10.2001 23.0998L12.1501 20.2217V22.4623C12.1501 23.1092 12.4126 23.7279 12.8719 24.1498C13.2376 24.4873 13.6594 24.6467 14.1001 24.6185C14.7282 24.581 15.3751 24.1685 16.0501 23.3904L17.7563 21.1779C17.8126 21.1029 17.9157 21.0935 17.9907 21.1404C18.1688 21.281 18.2532 21.5248 18.1782 21.7404Z\" fill=\"black\"><\/path>\n<path d=\"M30.225 11.0723H13.95C12.9562 11.0723 12.1406 11.8785 12.1406 12.8723V17.0441C12.1406 17.2973 12.3469 17.4941 12.5906 17.4941C12.8437 17.4941 13.0406 17.2879 13.0406 17.0441V12.8723C13.0406 12.3754 13.4438 11.9723 13.9406 11.9723H30.2156C30.7125 11.9723 31.1156 12.3754 31.1156 12.8723V22.9598C31.1156 23.4566 30.7125 23.8598 30.2156 23.8598H19.5469C19.2937 23.8598 19.0969 24.066 19.0969 24.3098C19.0969 24.5535 19.3031 24.7598 19.5469 24.7598H30.225C31.2188 24.7598 32.0344 23.9535 32.0344 22.9598V12.8723C32.0344 11.8785 31.2188 11.0723 30.225 11.0723Z\" fill=\"black\"><\/path>\n<path d=\"M24.1773 16.7905C22.3961 16.4624 20.8398 17.8499 20.8398 19.5749C20.8398 21.1312 22.1055 22.4062 23.6711 22.4062C23.8398 22.4062 24.0086 22.3874 24.1773 22.3593C24.4211 22.3124 24.5898 22.078 24.543 21.8343C24.4961 21.5905 24.2617 21.4218 24.018 21.4687C23.9055 21.4874 23.7836 21.4968 23.6711 21.4968C22.6117 21.4968 21.7492 20.6343 21.7492 19.5749C21.7492 18.5155 22.6117 17.653 23.6711 17.653C23.7836 17.653 23.8961 17.6624 24.018 17.6812C24.2617 17.728 24.5055 17.5593 24.543 17.3155C24.5805 17.0718 24.4211 16.8374 24.1773 16.7905Z\" fill=\"black\"><\/path>\n<path d=\"M27.1203 22.3969C28.6766 22.3969 29.9516 21.1312 29.9516 19.5656C29.9516 18.0094 28.6859 16.7344 27.1203 16.7344C25.5547 16.7344 24.2891 18 24.2891 19.5656C24.2891 21.1312 25.5547 22.3969 27.1203 22.3969ZM27.1203 17.6531C28.1797 17.6531 29.0422 18.5156 29.0422 19.575C29.0422 20.6344 28.1797 21.4969 27.1203 21.4969C26.0609 21.4969 25.1984 20.6344 25.1984 19.575C25.1984 18.5156 26.0609 17.6531 27.1203 17.6531Z\" fill=\"black\"><\/path>\n<\/g>\n<defs>\n<clippath id=\"clip0\">\n<rect width=\"24\" height=\"24\" fill=\"white\" transform=\"translate(8.60547 8.69141)\"><\/rect>\n<\/clippath>\n<\/defs>\n<\/svg>",
+              "item_label": "100% secure payment",
+              "text_alignment": "center",
+              "border_style": "quote"
+            }
+          },
+          "00f6a2bd-5aab-476e-b7cf-256252531d5d": {
+            "type": "text_block",
+            "settings": {
+              "svg_icon": "<svg width=\"41\" height=\"41\" viewbox=\"0 0 41 41\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect x=\"0.605469\" y=\"0.488281\" width=\"40\" height=\"40\" rx=\"20\" fill=\"white\"><\/rect>\n<path d=\"M31.951 17.6433C31.8422 17.4878 31.6633 17.3945 31.4767 17.3945H27.8606V15.8547C27.8606 15.5359 27.5962 15.2715 27.2774 15.2715H14.1741C13.8552 15.2715 13.5908 15.5359 13.5908 15.8547V25.2798C13.5908 25.5986 13.8552 25.863 14.1741 25.863H15.8227C16.1259 26.9206 17.1058 27.706 18.2567 27.706C19.4076 27.706 20.3874 26.9284 20.6907 25.863H27.153C27.4562 26.9206 28.4361 27.706 29.587 27.706C30.7379 27.706 31.7177 26.9284 32.021 25.863H33.2264C33.5452 25.863 33.8096 25.5986 33.8096 25.2798V20.4817C33.8096 20.3573 33.7707 20.2406 33.7007 20.1473L31.951 17.6433ZM32.6509 20.6528H30.038V18.5687H31.1812L32.6509 20.6528ZM14.7573 16.4457H26.6941V24.7043H20.7452C20.5196 23.5301 19.4932 22.6436 18.2567 22.6436C17.0202 22.6436 15.986 23.5301 15.7682 24.7043H14.7573V16.4457ZM18.2567 26.5396C17.5024 26.5396 16.888 25.9252 16.888 25.1709C16.888 24.4166 17.5024 23.8023 18.2567 23.8023C19.011 23.8023 19.6254 24.4166 19.6254 25.1709C19.6254 25.9252 19.011 26.5396 18.2567 26.5396ZM29.5948 26.5396C28.8405 26.5396 28.2261 25.9252 28.2261 25.1709C28.2261 24.4166 28.8405 23.8023 29.5948 23.8023C30.3491 23.8023 30.9634 24.4166 30.9634 25.1709C30.9634 25.9252 30.3491 26.5396 29.5948 26.5396ZM32.0832 24.7043C31.8577 23.5301 30.8312 22.6436 29.5948 22.6436C28.926 22.6436 28.3117 22.908 27.8606 23.3357V18.5687H28.8638V21.236C28.8638 21.5549 29.1282 21.8193 29.447 21.8193H32.6587V24.7043H32.0832Z\" fill=\"black\"><\/path>\n<path d=\"M7.98265 16.4458H12.1431C12.4619 16.4458 12.7263 16.1814 12.7263 15.8625C12.7263 15.5437 12.4619 15.2793 12.1431 15.2793H7.98265C7.66381 15.2793 7.39941 15.5437 7.39941 15.8625C7.39941 16.1814 7.66381 16.4458 7.98265 16.4458Z\" fill=\"black\"><\/path>\n<path d=\"M12.1436 17.4023H8.93968C8.62084 17.4023 8.35645 17.6667 8.35645 17.9856C8.35645 18.3044 8.62084 18.5688 8.93968 18.5688H12.1436C12.4624 18.5688 12.7268 18.3044 12.7268 17.9856C12.7268 17.6667 12.4702 17.4023 12.1436 17.4023Z\" fill=\"black\"><\/path>\n<path d=\"M12.1412 19.5254H10.1194C9.80053 19.5254 9.53613 19.7898 9.53613 20.1086C9.53613 20.4275 9.80053 20.6919 10.1194 20.6919H12.1412C12.4601 20.6919 12.7245 20.4275 12.7245 20.1086C12.7245 19.7898 12.4679 19.5254 12.1412 19.5254Z\" fill=\"black\"><\/path>\n<path d=\"M12.1435 21.6484H11.4436C11.1248 21.6484 10.8604 21.9128 10.8604 22.2317C10.8604 22.5505 11.1248 22.8149 11.4436 22.8149H12.1435C12.4623 22.8149 12.7267 22.5505 12.7267 22.2317C12.7267 21.9128 12.4701 21.6484 12.1435 21.6484Z\" fill=\"black\"><\/path>\n<\/svg>",
+              "item_label": "free delivery over $55",
+              "text_alignment": "center",
+              "border_style": "none"
+            }
+          }
+        },
+        "block_order": [
+          "41602aad-844c-4153-8c79-26eae5422ae5",
+          "50f882cf-1b48-4680-a3ca-3095c2885dcb",
+          "f6b8b781-e738-4f51-a1d3-245a641d006b",
+          "00f6a2bd-5aab-476e-b7cf-256252531d5d"
+        ],
+        "settings": {
+          "bg_color": "#d6c7a3",
+          "text_color": "#333333"
+        }
+      },
+      "about-us-featured-text-second-style": {
+        "type": "about-us-featured-text-second-style",
+        "settings": {
+          "display_featured_divider": true,
+          "pre_text": "CHOCOLATE SHOP",
+          "title": "It starts with honesty",
+          "sign_text": "Highland chocolatier",
+          "content": "",
+          "title_font_size": 72,
+          "text_font_size": 16,
+          "sign_text_font_size": 145,
+          "button_label": "",
+          "button_link": "",
+          "text_below_button": "",
+          "main_image": "shopify:\/\/shop_images\/AA_Enrobed_Box_2_turndown_2.jpg",
+          "small_left_image": "shopify:\/\/shop_images\/Chocolates_Angle_High_Res_-_Passionfruit_Edit_2.jpg",
+          "small_img_bottom_position": 21,
+          "text_size": "featured_text",
+          "text_alignment": "center",
+          "description_title": "Craftsmanship and the pursuit of perfection",
+          "description_detail1": "<p>Award-winning Master Chocolatier Iain Burnett trained under Master Chocolatiers of the Belgian, Swiss and French schools, and is known for his world-class Velvet Truffle and range of spiced pralines.  It took over 3 years to create his unique truffle using only natural and fresh ingredients.   Iain and his team provide top chefs with gourmet truffles of an artisan quality unavailable elsewhere.<\/p>",
+          "description_sub_title": "IAIN & HIS TEAM",
+          "description_detail2": "<p>The small dedicated team of chocolatiers are trained in-house to meticulously hand-craft chocolates.  Iain's pure truffle ganache is served elegantly enrobed in chocolate, or experienced in its purest form without a chocolate shell at all! Iain hopes that you enjoy the chocolates as much as he loves creating them.<\/p>",
+          "bottom_text": "INGREDIENTS",
+          "heading_color": "#1e272d",
+          "text_color": "#8a8a8a",
+          "sign_text_color": "#dddddd",
+          "button_color": "",
+          "button_bg_color": "",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "about-us-featured-text-third": {
+        "type": "about-us-featured-text-third",
+        "settings": {
+          "display_featured_divider": true,
+          "bg_image": "shopify:\/\/shop_images\/image_139_1.png",
+          "title": "CAREFULLY MATCHED FLAVOUR PROFILES",
+          "content": "<p>Iain uses a unique single-origin cocoa from the volcanic island of São Tomé in the South Atlantic.  <\/p>",
+          "title_font_size": 72,
+          "sub_heading_font_size": 36,
+          "text_font_size": 16,
+          "content_title_font_size": 14,
+          "text_below_btn_font_size": 12,
+          "button_label": "",
+          "button_link": "",
+          "text_below_button": "Exquisite Products",
+          "main_image": "shopify:\/\/shop_images\/IBHC_Chocolate_Ingredients_Magic_1_1.png",
+          "small_left_image": "shopify:\/\/shop_images\/Ingredients_chocolate_1.png",
+          "small_right_image": "shopify:\/\/shop_images\/Ingredients_cocoa_beans_1.png",
+          "content_title": "SINGLE-ORIGIN COCOA",
+          "content1": "<p>This intense cocoa was carefully selected for its exceptional range of fruity, aromatic<\/p><p>and spicy characteristics, and was painstakingly matched with an unblended fresh<\/p><p>Scottish cream from a particular herd of cows in Perthshire.  With no artificial<\/p><p>additives or preservatives, only the best ingredients and exotic spices are infused to<\/p><p>create flavours and textures to delight the palate.<\/p>",
+          "small_img_bottom_position": 20,
+          "img_margin_top": 0,
+          "text_size": "featured_text",
+          "text_alignment": "center",
+          "heading_color": "",
+          "min_link_color": "",
+          "text_color": "",
+          "button_color": "",
+          "button_bg_color": "",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "about-us-image-text-second": {
+        "type": "about-us-image-text-second",
+        "blocks": {
+          "1457bdaf-08dc-44e7-9b46-cd00c20f377f": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AA_Unenrobed_open_ribbon_1_17e03390-1f27-49a3-9b67-fe55afc17851.jpg",
+              "image_crop": "none",
+              "pre_text": "",
+              "title": "BEAUTIFULLY PRESENTED IN ELEGANT BOXES",
+              "text": "<p>Both the Unenrobed and Enrobed Velvet Truffles and Pralines are presented in elegant boxes making them perfect for gift-giving.  The Highland Chocolatier works range of corporate clients to create customised chocolates. <\/p>",
+              "button_label": "View all",
+              "link": "",
+              "enable_product_item": true,
+              "product_image": "shopify:\/\/shop_images\/Rectangle_256.png",
+              "item_title": "Award winning selection",
+              "item_sub_text": "£39.95",
+              "item_link": "",
+              "bg_color": "",
+              "pre_text_color": "#d6c7a3",
+              "text_color": "#ffffff",
+              "item_image_bg_color": "#d6c7a3",
+              "item_text_part_bg_color": "#ffffff"
+            }
+          },
+          "3ff8d24d-ada1-4925-afad-4036f3213261": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AA_Enrobed_loose_plated_1_2.jpg",
+              "image_crop": "none",
+              "pre_text": "",
+              "title": "RECOGNIZED WITH OVER 40 AWARDS",
+              "text": "<p>Some of the best hotels and several Michelin Star chefs throughout the UK, Iain's chocolates have graced many famous tables.  All Iain's products are available to purchase at the shop in Grandtully, online or by telephone for delivery worldwide.<\/p>",
+              "button_label": "View all",
+              "link": "",
+              "enable_product_item": true,
+              "product_image": "shopify:\/\/shop_images\/image_120.png",
+              "item_title": "Award winning selection",
+              "item_sub_text": "£39.95",
+              "item_link": "",
+              "bg_color": "",
+              "pre_text_color": "#d6c7a3",
+              "text_color": "#ffffff",
+              "item_image_bg_color": "#d6c7a3",
+              "item_text_part_bg_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "1457bdaf-08dc-44e7-9b46-cd00c20f377f",
+          "3ff8d24d-ada1-4925-afad-4036f3213261"
+        ],
+        "settings": {
+          "wide_display": true,
+          "bg_image": "shopify:\/\/shop_images\/Rectangle_231_1.png",
+          "bg_space_size": 30,
+          "image_part_width": 45,
+          "margin_top": 0,
+          "image_part_padding": 60,
+          "featured_links_per_row": "1",
+          "frontpage_text_align": "center",
+          "frontpage_image_position": "row-reverse",
+          "css_class": "",
+          "custom_css": "",
+          "enable_logobar": true,
+          "logo_link1": "",
+          "logo_link2": "",
+          "logo_link3": "",
+          "logo_link4": "",
+          "logo_link5": "",
+          "logo_link6": "",
+          "logo_link7": "",
+          "logo_link8": ""
+        }
+      },
+      "about-us-image-with-text-overlay-origin-style": {
+        "type": "about-us-image-with-text-overlay-origin-style",
+        "settings": {
+          "wide_display": true,
+          "enable_featured_items": true,
+          "enable_btn_svg": true,
+          "image": "shopify:\/\/shop_images\/270519-Various-58_1.jpg",
+          "pretext": "<p>VISIT US <\/p>",
+          "title": "THe chocolate shop",
+          "heading_font_size": 42,
+          "subtitle": "<p>Browse the Chocolate and Gift shops, enjoy a guided<\/p><p>Chocolate Tasting and learn about the world of gourmet<\/p><p>chocolate. <\/p>",
+          "caption_background": false,
+          "caption_background_transparency": false,
+          "button1": "BOOK A VISIT",
+          "button1_link": "#",
+          "button_arrow_direction": "top-bottom",
+          "button2": "",
+          "button2_link": "",
+          "sign_text": "",
+          "under_sign_text": "",
+          "text_position": "center",
+          "text_align": "center",
+          "pre_text_color": "#ffffff",
+          "heading_color": "#ffffff",
+          "sub_text_color": "#ffffff",
+          "sign_text_color": "",
+          "under_sign_text_color": "",
+          "btn_label_color": "#ffffff",
+          "btn_bg_color": "",
+          "mobile_image_crop": "none",
+          "mobile_text_below_image": true,
+          "mobile_text_color": "rgba(0,0,0,0)",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "about-us-featured-collection": {
+        "type": "about-us-featured-collection",
+        "settings": {
+          "title": "Explore  our products",
+          "collection_description": true,
+          "collection": "",
+          "collection_style": "slider",
+          "products_per": 4,
+          "products_limit": 8,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mega-menu-1": {
+        "type": "mega-menu-1",
+        "blocks": {
+          "mega-menu-1-0": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "chocolate-selection-boxes",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-1-1": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "other-chocolates",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-1-2": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "chocolate-gift-ideas",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-1-3": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "chocolate-tasting-flights-and-pairings",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-1-0",
+          "mega-menu-1-1",
+          "mega-menu-1-2",
+          "mega-menu-1-3"
+        ],
+        "settings": {
+          "parent": "CHOCOLATE SHOP"
+        }
+      },
+      "mega-menu-2": {
+        "type": "mega-menu-2",
+        "blocks": {
+          "mega-menu-2-0": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "<p>Add description, images, menus and links to your mega menu<\/p>",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-2-1": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "<p>A column with no settings can be used as a spacer<\/p>",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-2-2": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-2-3": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "<p>Link to your collections, sales and even external links<\/p>",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-2-4": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "<p>Add up to five columns<\/p>",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-2-0",
+          "mega-menu-2-1",
+          "mega-menu-2-2",
+          "mega-menu-2-3",
+          "mega-menu-2-4"
+        ],
+        "settings": {
+          "parent": ""
+        }
+      },
+      "standard-featured-text": {
+        "type": "standard-featured-text",
+        "settings": {
+          "sign_text": "Crafted by Hand",
+          "title": "luxury lifestyle",
+          "image": "shopify:\/\/shop_images\/Group_3890.jpg",
+          "sub_title": "Iain uses a unique single-origin cocoa from the volcanic island",
+          "content": "<p>Award-winning Master Chocolatier Iain Burnett trained under Master Chocolatiers of the Belgian, Swiss and French schools, and is known for his world-class Velvet Truffle and range of spiced pralines.  It took over 3 years to create his unique truffle using only natural and fresh ingredients.   Iain and his team provide top chefs with gourmet truffles of an artisan quality unavailable elsewhere.<\/p>",
+          "sign_text_font_size": 70,
+          "title_font_size": 72,
+          "subtitle_font_size": 36,
+          "text_font_size": 16,
+          "button_label": "",
+          "button_link": "",
+          "text_size": "featured_text",
+          "sign_color": "#d6c7a3",
+          "heading_color": "#000000",
+          "text_color": "",
+          "button_color": "",
+          "button_bg_color": "",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "wide_display": true,
+          "featured_collection_image": true,
+          "image_darken": false,
+          "image": "shopify:\/\/shop_images\/butterfly_24c9ae4e-f955-4c1f-9c42-ade4227e2397.png",
+          "display_collection_title": true,
+          "collection_breadcrumb": false,
+          "collection_tags": true,
+          "collection_sort": false,
+          "products_per_row": 3,
+          "pagination_limit": 9,
+          "toggle": false
+        }
+      },
+      "product-sidebar": {
+        "type": "product-sidebar",
+        "settings": {
+          "toggle": false
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "product_thumbs": true,
+          "gallery_arrows": true,
+          "enable_product_lightbox": true,
+          "activate_zoom": false,
+          "slideshow_speed": 0,
+          "slideshow_animation": "slide",
+          "thumbnail_position": "bottom",
+          "enable_thumbnail_slider": true,
+          "display_vendor": false,
+          "product_breadcrumb": false,
+          "display_sku": false,
+          "display_collections": false,
+          "display_type": false,
+          "display_tags": false,
+          "display_social_buttons": true,
+          "product_description_position": "top",
+          "display_savings": true,
+          "show_payment_button": true,
+          "product_images_position": "left",
+          "set_product_height": false,
+          "product_height": 500,
+          "video_looping": false,
+          "enable_shopify_product_badges": false,
+          "review_position": "next_to_gallery",
+          "display_recently_viewed": false,
+          "rv_title": "Recently Viewed Items",
+          "rv_products_style": "grid",
+          "rv_max_display": 4,
+          "rv_per": 4
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "product_recommendations_style": "grid",
+          "product_recommendations_heading": "You may also like",
+          "products_per_row": 3,
+          "recommended_products_limit": 4
+        }
+      },
+      "163244843351a7a65b": {
+        "type": "gallery-image-with-text-overlay",
+        "settings": {
+          "wide_display": true,
+          "enable_featured_items": false,
+          "enable_btn_svg": false,
+          "image": "shopify:\/\/shop_images\/gallery_background.png",
+          "pretext": "<p>We have sourced our unrivalled range of over 250 chocolates and truffles based on quality and flavour.<\/p>",
+          "title": "Build YOUR OWN Chocolate BOX Selection",
+          "heading_font_size": 42,
+          "subtitle": "",
+          "caption_background": false,
+          "caption_background_transparency": false,
+          "button1": "build your own box",
+          "button1_link": "",
+          "button2": "",
+          "button2_link": "",
+          "sign_text": "",
+          "under_sign_text": "",
+          "text_position": "center",
+          "text_align": "center",
+          "pre_text_color": "#000000",
+          "heading_color": "#151515",
+          "sub_text_color": "",
+          "sign_text_color": "",
+          "under_sign_text_color": "",
+          "btn_label_color": "#ffffff",
+          "btn_bg_color": "#7d241e",
+          "mobile_image_crop": "none",
+          "mobile_text_below_image": true,
+          "mobile_text_color": "",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1632529112b98cfc60": {
+        "type": "featured-collection-slider",
+        "settings": {
+          "title": "YOU MAY ALSO LIKE",
+          "collection_description": false,
+          "collection": "test-collection",
+          "collection_style": "slider",
+          "products_per": 4,
+          "products_limit": 9,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1632764255585d89e6": {
+        "type": "product-recommendations",
+        "disabled": true,
+        "settings": {
+          "show_product_recommendations": true,
+          "product_recommendations_style": "grid",
+          "product_recommendations_heading": "You may also like",
+          "products_per_row": 3,
+          "recommended_products_limit": 4
+        }
+      }
+    },
+    "content_for_index": [
+      "1489283389016",
+      "1628013742da0cc91d",
+      "1489284533457",
+      "16279459264ca11dda",
+      "163244843351a7a65b",
+      "16280890809f201984",
+      "16280890322589efc2",
+      "16280875467050c279",
+      "1632529112b98cfc60",
+      "1632764255585d89e6",
+      "1628089156e1d93eb8",
+      "16281802547e910570",
+      "1489285418400",
+      "16281740344279aa92",
+      "1489285367207",
+      "1628187275044f4efa",
+      "16281889699ce3559c"
+    ]
+  }
+}

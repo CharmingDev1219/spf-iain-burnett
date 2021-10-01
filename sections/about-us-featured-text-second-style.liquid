@@ -1,0 +1,233 @@
+{% include 'about-us-include-featured-text-second-style' %}
+
+{% schema %}
+  {
+    "name": "About|Featured Text 2nd",
+    "class": "shopify-section--rich-text-and-image",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "display_featured_divider",
+        "label": "Show divided lines",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Section BG Image"
+      },
+      {
+        "type": "text",
+        "id": "pre_text",
+        "label": "Pre Text",
+        "default": "CHOCOLATE SHOP"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "It starts with honesty"
+      },
+      {
+        "type": "text",
+        "id": "sign_text",
+        "label": "Sign Text",
+        "default": "Highland chocolatier"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Text",
+        "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+      },
+      {
+        "type": "range",
+        "id": "title_font_size",
+        "label": "Heading size",
+        "min": 24,
+        "max": 100,
+        "default": 74,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "text_font_size",
+        "label": "Text size",
+        "min": 12,
+        "max": 50,
+        "default": 16,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "sign_text_font_size",
+        "label": "BG Sign Text size",
+        "min": 20,
+        "step":5,
+        "max": 200,
+        "default": 75,
+        "unit": "px"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "text",
+        "id": "text_below_button",
+        "label": "Text below Button",
+        "default": "FIRST IDEA"
+      },
+      {
+        "type": "image_picker",
+        "id": "main_image",
+        "label": "Main Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "small_left_image",
+        "label": "Left Small Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "small_right_image",
+        "label": "Left Right Image"
+      },
+      {
+        "type": "range",
+        "id": "small_img_bottom_position",
+        "label": "Small Images Bottom position",
+        "min": 0,
+        "step":1,
+        "max": 100,
+        "default": 50,
+        "unit": "%"
+      },
+      {
+        "type": "select",
+        "id": "text_size",
+        "label": "Text size",
+        "default": "featured_text",
+        "options": [
+          {
+            "value": "regular_text",
+            "label": "Regular"
+          },
+          {
+            "value": "featured_text",
+            "label": "Large"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Text alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "align_left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Description Part"
+      },
+      {
+        "type": "text",
+        "id": "description_title",
+        "label": "Description Title",
+        "default": "Craftsmanship and the pursuit of perfection"
+      },
+      {
+        "type": "richtext",
+        "id": "description_detail1",
+        "label": "Description Detail",
+        "default": "<p>Award-winning Master Chocolatier Iain Burnett trained under Master Chocolatiers of the Belgian, Swiss and French schools, and is known for his world-class Velvet Truffle and range of spiced pralines.  It took over 3 years to create his unique truffle using only natural and fresh ingredients.   Iain and his team provide top chefs with gourmet truffles of an artisan quality unavailable elsewhere.</p>"
+      },
+      {
+        "type": "text",
+        "id": "description_sub_title",
+        "label": "Description Sub Title",
+        "default": "IAIN & HIS TEAM"
+      },
+      {
+        "type": "richtext",
+        "id": "description_detail2",
+        "label": "Description Detail",
+        "default": "<p>The small dedicated team of chocolatiers are trained in-house to meticulously hand-craft chocolates.  Iain's pure truffle ganache is served elegantly enrobed in chocolate, or experienced in its purest form without a chocolate shell at all! Iain hopes that you enjoy the chocolates as much as he loves creating them.</p>"
+      },
+      {
+        "type": "text",
+        "id": "bottom_text",
+        "label": "Bottome Text",
+        "default": "IAIN & HIS TEAM"
+      },
+      {
+        "type": "header",
+        "content": "Color"
+      },
+      {
+        "type": "color",
+        "id": "heading_color",
+        "label": "Heading"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text"
+      },
+      {
+        "type": "color",
+        "id": "sign_text_color",
+        "label": "Sign Text"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button Label"
+      },
+      {
+        "type": "color",
+        "id": "button_bg_color",
+        "label": "Button BG color"
+      },
+      {
+        "type": "header",
+        "content": "Advanced"
+      },
+      {
+        "type": "paragraph",
+        "content": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/360022329373)"
+      },
+      {
+        "type": "text",
+        "id": "css_class",
+        "label": "CSS Class"
+      },
+      {
+        "type": "textarea",
+        "id": "custom_css",
+        "label": "Custom CSS"
+      }
+    ],
+    "presets": [
+      {
+        "name": "About|Featured Text 2nd",
+        "category": "Text"
+      }
+    ]
+  }
+{% endschema %}

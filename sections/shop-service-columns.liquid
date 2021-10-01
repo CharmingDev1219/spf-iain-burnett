@@ -1,0 +1,161 @@
+{% comment %}
+** Text columns with images - dynamic **
+- Draggable section
+- Uses blocks
+{% endcomment %}
+
+{%- assign id = section.id -%}
+
+{% comment %} Content settings {% endcomment %}
+{%- assign blocks = section.blocks -%}
+{%- assign title = section.settings.title | escape -%}
+{% comment %} End content settings {% endcomment %}
+
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  #section--{{ section.id }} {
+    background:{{section.settings.bg_color}}
+  }
+{% endstyle %}
+
+<section id="section--{{ section.id }}">
+  <div class="container section">
+
+    {% for block in blocks %}
+      {% comment %} Content settings {% endcomment %}
+      {%- assign image = block.settings.icon_image -%}
+      {%- assign svg = block.settings.svg_icon -%}
+      {% comment %} End content settings {% endcomment %}
+
+      <div class="{% render 'column-width', value: blocks.size %} column {% if blocks.size > 3 %}medium-down--one-half{% else %}medium-down--one-whole{% endif %} text-column" {{ block.shopify_attributes }}>
+        <div class="border-style--{{ block.settings.border_style }} text-align--{{ block.settings.text_alignment }}">
+        
+          {% if image != blank %}
+            {% render 'image-element',
+                    image: image.src,
+                    alt: image.alt
+            %}
+          {% elsif svg != blank %}
+            {{ svg }}
+          {% else %}
+            <p>
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            </p>
+          {% endif %}
+
+          {% if block.settings.item_label != blank %}
+            <h3 class="small-heading">{{ block.settings.item_label | escape }}</h3>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Shop Services",
+    "class": "shopify-section--shop-services",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Color"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "BG color"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text_block",
+        "name": "Column",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon_image",
+            "label": "Icon PNG"
+          },
+          {
+            "type": "textarea",
+            "id": "svg_icon",
+            "label": "SVG Icon"
+          },
+          {
+            "type": "text",
+            "id": "item_label",
+            "label": "Item label"
+          },
+          {
+            "type": "select",
+            "id": "text_alignment",
+            "label": "Text alignment",
+            "default": "center",
+            "options": [
+              {
+                "value": "align_left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Center"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "border_style",
+            "label": "Border style",
+            "default": "none",
+            "options": [
+              {
+                "value": "none",
+                "label": "None"
+              },
+              {
+                "value": "box",
+                "label": "Box"
+              },
+              {
+                "value": "quote",
+                "label": "Quote"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Shop Services",
+        "category": "Text",
+        "blocks": [
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

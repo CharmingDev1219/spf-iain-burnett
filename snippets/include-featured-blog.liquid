@@ -1,0 +1,187 @@
+{% comment %}
+** Blog posts - dynamic **
+- Draggable section
+{% endcomment %}
+
+{% comment %} Assign object as block or section {% endcomment %}
+{% if type == 'block' %}
+  {%- assign object = block -%}
+{% else %}
+  {%- assign object = section -%}
+{% endif %}
+
+{%- assign id = object.id -%}
+
+{% comment %} Content settings {% endcomment %}
+{%- assign blog = blogs[object.settings.blog_widget_select] -%}
+{%- assign title = object.settings.title | escape -%}
+{% comment %} End content settings {% endcomment %}
+
+{% comment %} Advanced {% endcomment %}
+{%- assign css_class = object.settings.css_class -%}
+{%- assign custom_css = object.settings.custom_css -%}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  {% render 'css-loop',
+          css: custom_css,
+          id: id
+  %}
+{% endstyle %}
+
+<section class="section {{ css_class }}">
+  <div class="container">
+    {% if title != blank %}
+      <div class="one-whole column">
+        <div class="header-part">
+          <h2 class="title center blog">{{ title }}</h2>
+          {% if object.settings.view_all_title %}
+            <a href="{{ object.settings.view_all_link}}" class="read_more">
+              {{ object.settings.view_all_title }}
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.94727 0.240234L8.67383 0.513672C8.47852 0.708984 8.47852 0.982422 8.67383 1.17773L15.627 8.13086H0.978516C0.705078 8.13086 0.509766 8.36523 0.509766 8.59961V8.99023C0.509766 9.26367 0.705078 9.45898 0.978516 9.45898H15.627L8.67383 16.4512C8.47852 16.6465 8.47852 16.9199 8.67383 17.1152L8.94727 17.3887C9.14258 17.584 9.41602 17.584 9.61133 17.3887L17.8535 9.14648C18.0488 8.95117 18.0488 8.67773 17.8535 8.48242L9.61133 0.240234C9.41602 0.0449219 9.14258 0.0449219 8.94727 0.240234Z" fill="#7D241E"/>
+              </svg>
+            </a>
+          {% endif %}
+        </div>
+        <div class="feature_divider"></div>
+      </div>
+    {% endif %}
+
+    {% if blog != blank %}
+      {% for article in blog.articles limit: object.settings.home_page_articles %}
+        <div class="{% render 'column-width', value: object.settings.home_page_articles %} column article medium-down--one-half small-down--one-whole">
+          {% if article.image != blank %}
+            <a href="{{ article.url }}" class="blog-post-image-wrapper">
+              {% render 'image-element',
+                      image: article.image,
+                      alt: article.image.alt
+              %}
+            </a>
+          {% endif %}
+          <p class="blog_meta">
+            {% if object.settings.blog_author %}
+              <span>{{ 'blogs.article.by_author' | t: author: article.author }}</span>
+            {% endif %}
+
+            {% if object.settings.blog_date %}
+              <span>{{ article.published_at | date: format: "month_day_year" }}</span>
+            {% endif %}
+
+            {% if object.settings.read_time %}
+              {% render 'include-read-time', article: article %}
+            {% endif %}
+
+            {% if object.settings.blog_comment_count %}
+              {% if settings.disqus_enabled %}
+                <span>
+                  <a href="{{ article.url }}#disqus_thread" data-disqus-identifier="{{ article.id }}" class="disqus-comment-count">{{ 'blogs.counts.comments_with_count' | t: count: 0 }}</a>
+                </span>
+              {% elsif article.comments_enabled? and article.comments_count > 0 %}
+                <span>
+                  <a href="{{ article.url }}#comments">{{ 'blogs.counts.comments_with_count' | t: count: article.comments_count }}</a>
+                </span>
+              {% endif %}
+            {% endif %}
+          </p>
+          <h3 class="sub_title">
+            <a href="{{ article.url }}">{{ article.title }}</a>
+          </h3>
+
+
+          {% if object.settings.blog_tags %}
+            <div class="blog_meta tags">
+              {% for tag in article.tags %}
+                <span>
+                  <a href="{{ blog.url }}/tagged/{{ tag | handle }}" title="{{ blog.title | escape }} {{ 'blogs.general.tagged' | t }} {{ tag | escape }}">
+                    {{ tag }}
+                  </a>
+                </span>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if object.settings.excerpt_display == 'full_excerpt' %}
+            {%- assign excerpt = article.excerpt -%}
+          {% elsif object.settings.excerpt_display == 'truncated_excerpt' %}
+            {%- assign excerpt = article.excerpt | truncate: 100 -%}
+          {% endif %}
+
+          {% if article.excerpt != blank %}
+            <div class="excerpt">
+              {{ excerpt }}
+            </div>
+          {% endif %}
+
+          {% if object.settings.read_more_link %}
+            <a href="{{ article.url }}" {% if settings.read_more_style == 'button' %}class="action_button continue-button"{% endif %}>{{ 'blogs.general.continue_reading_html' | t }}</a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% else %}
+      {% for i in (1..object.settings.home_page_articles) %}
+        <div class="{% render 'column-width', value: object.settings.home_page_articles %} column article medium-down--one-half small-down--one-whole">
+
+          <a href="#" class="blog-post-image-wrapper">
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          </a>
+
+          <h3 class="sub_title">
+            <a href="#">{{ 'homepage.onboarding.blogpost_title' | t }}</a>
+          </h3>
+          <p class="blog_meta">
+            {% if object.settings.blog_author %}
+              <span>{{ 'homepage.onboarding.blog_author' | t: author: article.author }}</span>
+            {% endif %}
+
+            {% if object.settings.blog_date %}
+              <span>{{ 'now' | date: format: "month_day_year" }}</span>
+            {% endif %}
+
+            {% if object.settings.read_time %}
+              {% render 'include-read-time', article: article %}
+            {% endif %}
+
+            {% if object.settings.blog_comment_count %}
+              {% if settings.disqus_enabled %}
+                <span>
+                  <a href="#" data-disqus-identifier="#" class="disqus-comment-count">{{ 'blogs.counts.comments_with_count' | t: count: 0 }}</a>
+                </span>
+              {% else %}
+                <span>
+                  <a href="#">{{ 'blogs.counts.comments_with_count' | t: count: 5 }}</a>
+                </span>
+              {% endif %}
+            {% endif %}
+          </p>
+
+          {% if object.settings.blog_tags %}
+            <div class="blog_meta tags">
+              {% for tag in article.tags %}
+                <span>
+                  <a href="{{ blog.url }}/tagged/{{ tag | handle }}" title="{{ blog.title | escape }} {{ 'blogs.general.tagged' | t }} {{ tag | escape }}">
+                    {{ tag }}
+                  </a>
+                </span>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if object.settings.excerpt_display == 'full_excerpt' %}
+            <div class="excerpt">
+              {{ 'homepage.onboarding.blog_excerpt' | t }}
+            </div>
+          {% elsif object.settings.excerpt_display == 'truncated_excerpt' %}
+            <div class="excerpt">
+              {{ 'homepage.onboarding.blog_excerpt' | t | truncate: 100 }}
+            </div>
+          {% endif %}
+
+          {% if object.settings.read_more_link %}
+            <a href="{{ article.url }}" {% if settings.read_more_style == 'button' %}class="action_button continue-button"{% endif %}>{{ 'blogs.general.continue_reading_html' | t }}</a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</section>

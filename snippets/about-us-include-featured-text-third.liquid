@@ -1,0 +1,182 @@
+{% comment %}
+** Rich text and image - dynamic **
+- Draggable section
+{% endcomment %}
+
+{% comment %} Assign object as block or section {% endcomment %}
+{% if type == 'block' %}
+  {%- assign object = block -%}
+{% else %}
+  {%- assign object = section -%}
+{% endif %}
+
+{%- assign id = object.id -%}
+
+{% comment %} Content settings {% endcomment %}
+{%- assign main_image = object.settings.main_image -%}
+{%- assign small_left_image = object.settings.small_left_image -%}
+{%- assign small_right_image = object.settings.small_right_image -%}
+{%- assign title = object.settings.title -%}
+{%- assign content_title = object.settings.content_title -%}
+{%- assign text_below_button = object.settings.text_below_button -%}
+{%- assign content = object.settings.content -%}
+{%- assign content1 = object.settings.content1 -%}
+{%- assign button_label = object.settings.button_label -%}
+{%- assign button_link = object.settings.button_link -%}
+{% comment %} End content settings {% endcomment %}
+
+{% comment %} Advanced {% endcomment %}
+{%- assign css_class = object.settings.css_class -%}
+{%- assign custom_css = object.settings.custom_css -%}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  {% render 'css-loop',
+          css: custom_css,
+          id: id
+  %}
+  #section--{{object.id}} {
+    {% if object.settings.bg_image != blank %}
+      background:url({{object.settings.bg_image | img_url: 'master'}});
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position-y: 0vw;
+      background-position-x: center;
+    {% endif %}
+    max-width: 1200px;
+  }
+  #section--{{object.id}} .image-element__wrap {
+    margin-top:-{{ object.settings.img_margin_top }}px;
+  }
+  #section--{{object.id}} .rich-text__heading {
+    font-size: {{object.settings.title_font_size}}px;
+    color:{{object.settings.heading_color}};
+    line-height: 1.1;
+  }
+  #section--{{object.id}} .rich-text__subheading {
+    color:{{object.settings.heading_color}};
+    font-size: {{object.settings.sub_heading_font_size}}px;
+  }
+  #section--{{object.id}} .rich-text__heading .mid-link {
+    color:{{object.settings.min_link_color}};
+    text-decoration: underline;
+  }
+  #section--{{object.id}} .content_title {
+    font-size: {{object.settings.content_title_font_size}}px;
+    color:{{object.settings.text_color}};
+  }
+  #section--{{object.id}} .rich-text__text {
+    font-size: {{object.settings.text_font_size}}px;
+    color:{{object.settings.text_color}};
+  }
+  #section--{{object.id}} .text-below-button {
+    font-size: {{object.settings.text_below_btn_font_size}}px;
+    color:{{object.settings.text_color}};
+  }
+  #section--{{object.id}} .action_button {
+    background:{{object.settings.button_bg_color}};
+    color:{{object.settings.button_color}};
+    border-color:{{object.settings.button_bg_color}};
+  }
+  
+  #section--{{object.id}} .images-container .small-left-image, #section--{{object.id}} .images-container .small-right-image  {
+    bottom: {{object.settings.small_img_bottom_position }}%;
+  }
+{% endstyle %}
+{% if section.settings.display_featured_divider %}
+  <div class="feature_background_part"></div>
+{% endif %}
+<section id="section--{{object.id}}" class="section {{ css_class }}">
+  <div class="container">
+    <div class="one-whole column">
+      <div class="rich-text__content {{ object.settings.text_alignment }}">
+        
+        {% if title %}
+  
+          <h2 class="rich-text__heading title">
+            {{ title }}
+          </h2>
+        {% endif %}
+
+        <div class="rich-text__subheading {{ object.settings.text_size }}">
+          {% if content != blank %}
+            {{ content }}
+          {% endif %}
+        </div>
+        <div class="images-container">
+          <div class="images-wraps">
+            {% if main_image != blank %}
+              <div class="main-image">
+                {% render 'image-element',
+                        image: main_image.src,
+                        alt: main_image.alt,
+                        stretch_width: true
+                %}
+              </div>
+            {% endif %}
+
+            {% if small_left_image != blank %}
+              <div class="small-left-image">
+                {% render 'image-element',
+                        image: small_left_image.src,
+                        alt: small_left_image.alt,
+                        stretch_width: true
+                %}
+              </div>
+            {% endif %}
+
+            {% if small_right_image != blank %}
+              <div class="small-right-image">
+                {% render 'image-element',
+                        image: small_right_image.src,
+                        alt: small_right_image.alt,
+                        stretch_width: true
+                %}
+              </div>
+            {% endif %}
+          </div>
+          
+          
+        </div>
+        {% if content_title %}
+  
+          <h4 class="content_title">
+            {{ content_title }}
+          </h4>
+        {% endif %}
+        <div class="rich-text__text {{ object.settings.text_size }}">
+          {% if content1 != blank %}
+            {{ content1 }}
+          
+            {% if section.settings.display_featured_divider %}
+              <div class="feature_divider-line2"></div>
+            {% endif %}
+          {% endif %}
+        </div>
+        {% if button_label != blank %}
+          <a href="{{ button_link }}" class="action_button">
+            {{ button_label }}
+          </a>
+        {% endif %}
+        {% if text_below_button %}
+          <h4 class="text-below-button">
+            {{ text_below_button }}
+          </h4>
+          {% if section.settings.display_featured_divider %}
+            <div class="feature_divider-line3"></div>
+          {% endif %}
+        {% endif %}
+        {% if image != blank %}
+          {% render 'image-element',
+                  image: image.src,
+                  alt: image.alt,
+                  stretch_width: true
+          %}
+          {% if section.settings.display_featured_divider %}
+            <div class="feature_divider-line4"></div>
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

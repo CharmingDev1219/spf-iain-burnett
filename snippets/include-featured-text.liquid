@@ -1,0 +1,104 @@
+{% comment %}
+** Rich text and image - dynamic **
+- Draggable section
+{% endcomment %}
+
+{% comment %} Assign object as block or section {% endcomment %}
+{% if type == 'block' %}
+  {%- assign object = block -%}
+{% else %}
+  {%- assign object = section -%}
+{% endif %}
+
+{%- assign id = object.id -%}
+
+{% comment %} Content settings {% endcomment %}
+{%- assign image = object.settings.image -%}
+{%- assign title1 = object.settings.title1 -%}
+{%- assign title2 = object.settings.title2 -%}
+{%- assign title3 = object.settings.title3 -%}
+{%- assign content = object.settings.content -%}
+{%- assign button_label = object.settings.button_label -%}
+{%- assign button_link = object.settings.button_link -%}
+{% comment %} End content settings {% endcomment %}
+
+{% comment %} Advanced {% endcomment %}
+{%- assign css_class = object.settings.css_class -%}
+{%- assign custom_css = object.settings.custom_css -%}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  {% render 'css-loop',
+          css: custom_css,
+          id: id
+  %}
+  #section--{{object.id}} {
+    {% if object.settings.bg_image != blank %}
+      background:url({{object.settings.bg_image | img_url: 'master'}});
+      background-repeat: no-repeat;
+      background-size: 129%;
+      background-position-y: 120%;
+      background-position-x: center;
+    {% endif %}
+    max-width: 1200px;
+  }
+  #section--{{object.id}} .rich-text__heading {
+    font-size: {{object.settings.title_font_size}}px;
+    color:{{object.settings.heading_color}};
+  }
+  #section--{{object.id}} .rich-text__heading .mid-link {
+    color:{{object.settings.min_link_color}};
+    text-decoration: underline;
+  }
+  #section--{{object.id}} .rich-text__text {
+    font-size: {{object.settings.text_font_size}}px;
+    color:{{object.settings.text_color}};
+  }
+  #section--{{object.id}} .action_button {
+    background:{{object.settings.button_bg_color}};
+    color:{{object.settings.button_color}};
+    border-color:{{object.settings.button_bg_color}};
+  }
+{% endstyle %}
+
+<section id="section--{{object.id}}" class="section {{ css_class }}">
+  <div class="container">
+    <div class="one-whole column">
+      <div class="rich-text__content {{ object.settings.text_alignment }}">
+        {% if image != blank %}
+          {% render 'image-element',
+                  image: image.src,
+                  alt: image.alt,
+                  stretch_width: true
+          %}
+        {% endif %}
+
+        {% if title1 != blank and title2 == blank and title3 == blank %}
+          <h2 class="rich-text__heading title">
+            {{ title1 }}
+          </h2>
+          <div class="feature_divider"></div>
+        {% elsif title1 != blank and title2 != blank and title3 != blank %}
+          <h2 class="rich-text__heading title">
+            {{ title1 }}
+            <a class="mid-link" href="{% if object.settings.mid_heading_link != blank %}{{object.settings.mid_heading_link}}{% else %}#{% endif %}">{{ title2 }}</a>
+            {{ title3 }}
+          </h2>
+        {% endif %}
+
+        <div class="rich-text__text {{ object.settings.text_size }}">
+          {% if content != blank %}
+            {{ content }}
+          {% endif %}
+
+          
+        </div>
+        {% if button_label != blank %}
+          <a href="{{ button_link }}" class="action_button">
+            {{ button_label }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

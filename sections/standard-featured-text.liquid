@@ -1,0 +1,191 @@
+{% include 'standard-include-featured-text' %}
+
+{% schema %}
+  {
+    "name": "Standard | FeaturedText",
+    "class": "shopify-section--rich-text-and-image",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Section BG Image"
+      },
+      {
+        "type": "text",
+        "id": "sign_text",
+        "label": "Sign Text",
+        "default": "Crafted by Hand"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "luxury lifestyle"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "sub_title",
+        "label": "sub Heading",
+        "default": "Iain uses a unique single-origin cocoa from the volcanic island"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Text",
+        "default": "<p>Award-winning Master Chocolatier Iain Burnett trained under Master Chocolatiers of the Belgian, Swiss and French schools, and is known for his world-class Velvet Truffle and range of spiced pralines.  It took over 3 years to create his unique truffle using only natural and fresh ingredients.   Iain and his team provide top chefs with gourmet truffles of an artisan quality unavailable elsewhere.</p>"
+      },
+      {
+        "type": "range",
+        "id": "sign_text_font_size",
+        "label": "Sign size",
+        "min": 24,
+        "max": 100,
+        "default": 70,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "title_font_size",
+        "label": "Heading size",
+        "min": 24,
+        "max": 100,
+        "default": 72,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "subtitle_font_size",
+        "label": "SubHeading size",
+        "min": 24,
+        "max": 100,
+        "default": 36,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "text_font_size",
+        "label": "Text size",
+        "min": 12,
+        "max": 50,
+        "default": 16,
+        "unit": "px"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "select",
+        "id": "text_size",
+        "label": "Text size",
+        "default": "featured_text",
+        "options": [
+          {
+            "value": "regular_text",
+            "label": "Regular"
+          },
+          {
+            "value": "featured_text",
+            "label": "Large"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "headingtext_alignment",
+        "label": "Heading alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "align_left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "context_alignment",
+        "label": "Contexts alignment",
+        "default": "align_left",
+        "options": [
+          {
+            "value": "align_left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Color"
+      },
+      {
+        "type": "color",
+        "id": "sign_color",
+        "label": "Sign Color"
+      },
+      {
+        "type": "color",
+        "id": "heading_color",
+        "label": "Heading"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button Label"
+      },
+      {
+        "type": "color",
+        "id": "button_bg_color",
+        "label": "Button BG color"
+      },
+      {
+        "type": "header",
+        "content": "Advanced"
+      },
+      {
+        "type": "paragraph",
+        "content": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/360022329373)"
+      },
+      {
+        "type": "text",
+        "id": "css_class",
+        "label": "CSS Class"
+      },
+      {
+        "type": "textarea",
+        "id": "custom_css",
+        "label": "Custom CSS"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Standard | FeaturedText",
+        "category": "Text"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,167 @@
+{% include 'about-us-include-featured-text' %}
+
+{% schema %}
+  {
+    "name": "About Us | Featured Text",
+    "class": "shopify-section--rich-text-and-image",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "display_featured_divider",
+        "label": "Show divided lines",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Section BG Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "The best,"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Text",
+        "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+      },
+      {
+        "type": "range",
+        "id": "title_font_size",
+        "label": "Heading size",
+        "min": 24,
+        "max": 100,
+        "default": 74,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "text_font_size",
+        "label": "Text size",
+        "min": 12,
+        "max": 50,
+        "default": 16,
+        "unit": "px"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "text",
+        "id": "text_below_button",
+        "label": "Text below Button",
+        "default": "FIRST IDEA"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "range",
+        "id": "img_margin_top",
+        "label": "Move image to top",
+        "min": 0,
+        "step":5,
+        "max": 300,
+        "default": 160,
+        "unit": "px"
+      },
+      {
+        "type": "select",
+        "id": "text_size",
+        "label": "Text size",
+        "default": "featured_text",
+        "options": [
+          {
+            "value": "regular_text",
+            "label": "Regular"
+          },
+          {
+            "value": "featured_text",
+            "label": "Large"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Text alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "align_left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Color"
+      },
+      {
+        "type": "color",
+        "id": "heading_color",
+        "label": "Heading"
+      },
+      {
+        "type": "color",
+        "id": "min_link_color",
+        "label": "Mid-Link Color"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button Label"
+      },
+      {
+        "type": "color",
+        "id": "button_bg_color",
+        "label": "Button BG color"
+      },
+      {
+        "type": "header",
+        "content": "Advanced"
+      },
+      {
+        "type": "paragraph",
+        "content": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/360022329373)"
+      },
+      {
+        "type": "text",
+        "id": "css_class",
+        "label": "CSS Class"
+      },
+      {
+        "type": "textarea",
+        "id": "custom_css",
+        "label": "Custom CSS"
+      }
+    ],
+    "presets": [
+      {
+        "name": "About Us | Featured Text",
+        "category": "Text"
+      }
+    ]
+  }
+{% endschema %}

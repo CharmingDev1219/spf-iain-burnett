@@ -1,0 +1,149 @@
+{% comment %}
+** Image with text overlay - dynamic **
+- Draggable section
+{% endcomment %}
+
+{% comment %} Assign object as block or section {% endcomment %}
+{% if type == 'block' %}
+  {%- assign object = block -%}
+{% else %}
+  {%- assign object = section -%}
+{% endif %}
+
+{%- assign id = object.id -%}
+{%- assign blocks = section.blocks -%}
+
+{% comment %} Content settings {% endcomment %}
+{%- assign image = object.settings.image -%}
+{%- assign pretext = object.settings.pretext -%}
+{%- assign title = object.settings.title | escape -%}
+{%- assign subtitle = object.settings.subtitle -%}
+{%- assign button = object.settings.button -%}
+{%- assign button_link = object.settings.button_link -%}
+{%- assign sign_text = object.settings.sign_text -%}
+{%- assign under_button_text = object.settings.under_button_text -%}
+{% comment %} End content settings {% endcomment %}
+
+{% comment %} Mobile crop {% endcomment %}
+{%- assign mobile_crop = 'mobile-banner--crop-' | append: object.settings.mobile_image_crop -%}
+
+{% comment %} Is the color set to transparent? {% endcomment %}
+{%- assign mobile_text_alpha = object.settings.mobile_text_color | color_extract: 'alpha' -%}
+
+{% comment %} Advanced {% endcomment %}
+{%- assign css_class = object.settings.css_class -%}
+{%- assign custom_css = object.settings.custom_css -%}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  {% render 'css-loop',
+          css: custom_css,
+          id: id
+  %}
+  #banner-{{ object.id }} .pretext {
+    color:{{ object.settings.pre_text_color }};
+  }
+  #banner-{{ object.id }} .headline {
+    color:{{ object.settings.heading_color }};
+    font-size: {{ object.settings.heading_font_size }}px;
+  }
+  #banner-{{ object.id }} .subtitle {
+    color:{{ object.settings.sub_text_color }};
+  }
+  #banner-{{ object.id }} .sign-text {
+    color:{{ object.settings.sign_text_color }};
+  }
+  #banner-{{ object.id }} .under-button-text {
+    color:{{ object.settings.under_button_text_color }};
+  }
+  #banner-{{ object.id }} .action_button {
+    background: {{ object.settings.btn_bg_color }};
+    color:{{ object.settings.btn_label_color }};
+    border-color:{{ object.settings.btn_bg_color }}
+  }
+  #banner-{{ object.id }} .action_button:hover {
+    background: rgba(0,0,0,0);
+    color:{{ object.settings.btn_bg_color }};
+    border-color:{{ object.settings.btn_bg_color }}
+  }
+  @media only screen and (max-width: 480px) {
+    #shopify-section-{{ object.id }} .pretext,
+    #shopify-section-{{ object.id }} .headline,
+    #shopify-section-{{ object.id }} .subtitle,
+    .block__{{ object.id }} .pretext,
+    .block__{{ object.id }} .headline,
+    .block__{{ object.id }} .subtitle {
+      color: {% if mobile_text_alpha != 0 %}{{ object.settings.mobile_text_color }}{% endif %};
+    }
+  }
+  @media (min-width: 799px) and (max-width:1024px)  {
+    #banner-{{ object.id }} .headline {
+      font-size: {{ object.settings.heading_font_size | divided_by: 1.7 }}px;
+    }
+  }
+  @media (min-width: 1025px) and (max-width:1200px)  {
+    #banner-{{ object.id }} .headline {
+      font-size: {{ object.settings.heading_font_size | divided_by: 1.3 }}px;
+    }
+  }
+{% endstyle %}
+
+<section id="banner-{{ object.id }}" class="section image-with-text-overlay-section {{ css_class }} {% if object.settings.wide_display == false %}is-width-standard{% else %}is-width-wide has-no-side-gutter{% endif %} full-width--{{ object.settings.wide_display }}">
+  <div class="container">
+    <div class="one-whole column banner">
+    {% if image != blank %}
+      {% render 'image-element',
+              image: image,
+              alt: image.alt,
+              stretch_width: true,
+              additional_classes: mobile_crop
+      %}
+    {% else %}
+      {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg placeholder-svg--banner' }}
+    {% endif %}
+    {% unless sign_text == blank and pretext == blank and title == blank and subtitle == blank and button1 == blank and button2 == blank %}
+      <div class="position-{{ object.settings.text_position }} caption js-caption caption--below-{{ object.settings.mobile_text_below_image }}">
+        <div class="caption-content caption-background-{{ object.settings.caption_background }} caption-transparency-{{ object.settings.caption_background_transparency }} align-{{ object.settings.text_align }}">
+          {% if pretext != blank %}
+            <div class="pretext">
+              {{ pretext }}
+            </div>
+          {% endif %}
+          {% if sign_text != blank %}
+            <div class="sign-text">
+              {{ sign_text }}
+            </div>
+          {% endif %}
+          {% if title != blank %}
+            <h1 class="headline">
+              {{ title }}
+            </h1>
+          {% endif %}
+          {% if subtitle != blank %}
+            <div class="subtitle">
+              {{ subtitle }}
+            </div>
+          {% endif %}
+          {% if button_link != blank %}
+            <a {% if button_link != blank %}href="{{ button_link }}"{% endif %} class="action_button first_button">
+              {% if section.settings.enable_btn_svg %}
+                <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="64.0742" y="0.753906" width="64" height="64" rx="32" transform="rotate(90 64.0742 0.753906)" fill="#D6C7A3"/>
+                  <line x1="32.5742" y1="42.7539" x2="32.5742" y2="21.7539" stroke="black"/>
+                  <path d="M22.2763 33.6222L32.1758 43.5216L42.0753 33.6222" stroke="black"/>
+                </svg>
+              {% endif %}
+              {{ button }}
+            </a>
+          {% endif %}
+          {% if under_button_text != blank %}
+            <div class="under-button-text">
+              {{ under_button_text }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endunless %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,583 @@
+
+{% comment %} Content settings {% endcomment %}
+{%- assign blocks = section.blocks -%}
+{% comment %} End content settings {% endcomment %}
+
+<section class="homepage-video-with-text-section">
+  {% if section.settings.enable_featured_items %}
+    <div class="featured-items-container" data-promo-animation="fadeInDown">
+      {% if blocks.size > 0 %}
+        {% for block in blocks %}
+          {%- assign image = block.settings.image -%}
+          {%- assign custom_svg = block.settings.custom_svg -%}
+          {%- assign item_title = block.settings.item_title -%}
+          {%- assign sub_text = block.settings.sub_text -%}
+          {%- assign item_link = block.settings.item_link -%}
+          <div id="block--{{block.id}}" class="featured-item promo-animation--true animated fadeInDown">
+            {% if image != blank %}
+              {% render 'image-element',
+                      image: image,
+                      alt: image.alt,
+                      stretch_width: true
+              %}
+            {% elsif custom_svg != blank %}
+              {{ custom_svg }}
+            {% else %}
+              {% capture i %}{% cycle "1", "2", "3", "4", "5", "6" %}{% endcapture %}
+              {{ 'collection-' | append: i | placeholder_svg_tag: 'placeholder-svg placeholder-svg--promotions' }}
+            {% endif %}
+            <div class="text-part">
+              {% if item_title != blank %}
+                {% if item_link != blank %}<a class="item-link" href="{{item_link}}">{% endif %}
+                  <h4>{{ item_title }}</h4>
+                {% if item_link != blank %}</a>{% endif %}
+              {% endif %}
+              {% if sub_text != blank %}
+                <span class="item-sub-text">
+                  {{ sub_text }}
+                </span>
+              {% endif %}
+            </div>
+          </div>
+          <style>
+            #block--{{block.id}} {
+              background-color: {{ block.settings.bg_color }};
+              {% if block.settings.bg_image != nil %}
+                background-image: url('{{ block.settings.bg_image | img_url: 'master' }}');
+              {% endif %}
+              background-repeat: no-repeat;
+              background-size: cover;
+              border:{{block.settings.size_border}}px solid {{block.settings.border_color }};
+            }
+            #block--{{block.id}} .image-element__wrap {
+              width: {{ block.settings.img_width_px }}px;
+              bottom: {{ block.settings.bottom_percentage }}%;
+            }
+            #block--{{block.id}} > svg {
+              width: {{ block.settings.img_width_px }}px;
+              bottom: {{ block.settings.bottom_percentage }}%;
+            }
+            #block--{{block.id}} .text-part h4 {
+              color:{{block.settings.title_color }};
+              font-weight:{{block.settings.font_weight}};
+              font-size: {{ block.settings.title_font_size }}px;
+            }
+            #block--{{block.id}} .text-part {
+              bottom:{{block.settings.title_bottom_percentage}}%;
+            }
+            #block--{{block.id}} .text-part .item-sub-text {
+              color:{{block.settings.sub_text_color }}
+            }
+          </style>
+        {% endfor %}
+      {% endif %}
+    </div>
+  {% else %}
+    <div class="featured-items-container-for-space"></div>
+  {% endif %}
+  <div class="context-container">
+    {% if section.settings.small_image != blank %}
+      {{ section.settings.small_image }}
+    {% elsif section.settings.small_image_png != blank %}
+      {%- assign small_bg_icon = section.settings.small_image_png -%}
+      {% render 'image-element',
+              image: small_bg_icon,
+              alt: small_bg_icon.alt,
+              stretch_width: false
+      %}
+    {% endif %}
+    <div class="text-area">
+      {% include 'include-image-with-text-for-homepage-video' %}
+    </div>
+    <div class="video-area">
+      {% include 'include-video-with-text' %}
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Video With Text",
+    "class": "shopify-section--video under-menu",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "wide_display",
+        "label": "Wide display",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_featured_items",
+        "label": "Enable Featured Items",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Text Area"
+      },
+      {
+        "type": "textarea",
+        "id": "small_image",
+        "label": "small bg icon SVG"
+      },
+      {
+        "type": "image_picker",
+        "id": "small_image_png",
+        "label": "Small bg icon png",
+        "info": "130 x 80px recommended"
+      },
+      {
+        "type": "image_picker",
+        "id": "symbole_icon",
+        "label": "symbole icon",
+        "info": "130 x 80px recommended"
+      },
+
+      {
+        "type": "richtext",
+        "id": "area_preheading",
+        "label": "Area Preheading"
+      },
+      {
+        "type": "text",
+        "id": "area_title",
+        "label": "Area Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "area_subheading",
+        "label": "Area Subheading"
+      },
+      {
+        "type": "text",
+        "id": "area_sign_text",
+        "label": "Area Sign Text"
+      },
+      {
+        "type": "text",
+        "id": "area_button_label",
+        "label": "Area Button Label"
+      },
+      {
+        "type": "url",
+        "id": "area_button_link",
+        "label": "Area button link"
+      },
+      {
+        "type": "select",
+        "id": "area_text_align",
+        "label": "Text alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Color"
+      },
+      {
+        "type": "color",
+        "id": "pre_text_color",
+        "label": "PreText"
+      },
+      {
+        "type": "color",
+        "id": "heading_color",
+        "label": "Heading"
+      },
+      {
+        "type": "color",
+        "id": "sub_text_color",
+        "label": "SubText"
+      },
+      {
+        "type": "color",
+        "id": "sign_text_color",
+        "label": "Sign Text"
+      },
+      {
+        "type": "color",
+        "id": "btn_label_color",
+        "label": "Button Label"
+      },
+      {
+        "type": "color",
+        "id": "btn_bg_color",
+        "label": "Button BG"
+      },
+      {
+        "type": "header",
+        "content": "Video Area"
+      },
+      {
+        "type": "select",
+        "id": "aspect_ratio",
+        "label": "Aspect ratio",
+        "default": "16:9",
+        "options": [
+          {
+            "value": "16:9",
+            "label": "16:9"
+          },
+          {
+            "value": "4:3",
+            "label": "4:3"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "autoplay",
+        "label": "Autoplay video",
+        "info": "Limited browser support for autoplaying video. [Learn more](https:\/\/help.outofthesandbox.com\/hc\/en-us\/articles\/360000661568-Why-won-t-my-video-autoplay-)",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "autoloop",
+        "label": "Autoloop video",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "mute_video",
+        "label": "Mute video",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_controls",
+        "label": "Show video controls",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "video_dark_overlay",
+        "label": "Darken video",
+        "default": false
+      },
+      {
+        "type": "video_url",
+        "id": "iframe_video",
+        "label": "Video link",
+        "accept": ["youtube", "vimeo"],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+      },
+      {
+        "type": "text",
+        "id": "html5_video",
+        "label": "HTML5 MP4/OGV File URL"
+      },
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image",
+        "info": "1600 x 900px recommended"
+      },
+      {
+        "type": "image_picker",
+        "id": "foreground_image",
+        "label": "Foreground Image",
+        "info": "1600 x 900px recommended"
+      },
+      {
+        "type": "checkbox",
+        "id": "display_text_over_video",
+        "label": "Show text when video is playing",
+        "default": false
+      },
+      {
+        "type": "richtext",
+        "id": "preheading",
+        "label": "Preheading"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "subheading",
+        "label": "Subheading"
+      },
+      {
+        "type": "checkbox",
+        "id": "caption_background",
+        "label": "Display solid text background",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "caption_background_transparency",
+        "label": "Enable background transparency",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "button link"
+      },
+      {
+        "type": "color",
+        "id": "play_button_bg_color",
+        "label": "Play Button BG Color",
+        "default":"#7D241E"
+      },
+      {
+        "type": "color",
+        "id": "play_button_arrow_color",
+        "label": "Play Button arrow Color",
+        "default":"#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "play_button_label_color",
+        "label": "Play Button Label Color",
+        "default":"#7D241E"
+      },
+      {
+        "type": "select",
+        "id": "text_position",
+        "label": "Text position",
+        "default": "center",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_align",
+        "label": "Text alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Mobile"
+      },
+      {
+        "type": "checkbox",
+        "id": "mobile_text_below_image",
+        "label": "Show text below image",
+        "default": true
+      },
+      {
+        "type": "color",
+        "id": "mobile_text_color",
+        "label": "Text"
+      },
+      {
+        "type": "header",
+        "content": "Advanced"
+      },
+      {
+        "type": "paragraph",
+        "content": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/360022329373)"
+      },
+      {
+        "type": "text",
+        "id": "css_class",
+        "label": "CSS Class"
+      },
+      {
+        "type": "textarea",
+        "id": "custom_css",
+        "label": "Custom CSS"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Featured Item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Featured Image",
+            "info": "245 x 205px recommended"
+          },
+          {
+            "type": "text",
+            "id": "img_width_px",
+            "label": "Image Width",
+            "default": "270"
+          },
+          {
+            "type": "range",
+            "id": "bottom_percentage",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "label": "bottom percentage",
+            "default": 50
+          },
+          {
+            "type": "range",
+            "id": "title_bottom_percentage",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "label": "Title bottom percentage",
+            "default": 0
+          },
+          {
+            "type": "image_picker",
+            "id": "bg_image",
+            "label": "Background Image",
+            "info": "245 x 205px recommended"
+          },
+          {
+            "type": "range",
+            "id": "size_border",
+            "min": 0,
+            "max": 18,
+            "step": 1,
+            "label": "border size",
+            "default": 18
+          },
+          {
+            "type": "range",
+            "id": "title_font_size",
+            "min": 0,
+            "max": 50,
+            "step": 1,
+            "label": "Item title font-size",
+            "default": 12
+          },
+          {
+            "type": "select",
+            "id": "font_weight",
+            "label": "font weight",
+            "default": "normal",
+            "options": [
+              {
+                "value": "bold",
+                "label": "Bold"
+              },
+              {
+                "value": "300",
+                "label": "Light"
+              },
+              {
+                "value": "normal",
+                "label": "Normal"
+              }
+            ]
+          },
+          {
+            "type": "textarea",
+            "id": "custom_svg",
+            "label": "SVG file"
+          },
+          {
+            "type": "text",
+            "id": "item_title",
+            "label": "Item Title",
+            "default": "Award winning selection"
+          },
+          {
+            "type": "text",
+            "id": "sub_text",
+            "label": "Subtext",
+            "default": "£39.95"
+          },
+          {
+            "type": "url",
+            "id": "item_link",
+            "label": "Item link"
+          },
+          {
+            "type": "header",
+            "content": "Colors"
+          },
+          {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background"
+          },
+          {
+            "type": "color",
+            "id": "border_color",
+            "label": "Border Color"
+          },
+          {
+            "type": "color",
+            "id": "title_color",
+            "label": "Title Color"
+          },
+          {
+            "type": "color",
+            "id": "sub_text_color",
+            "label": "Subtext Color"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Video With Text",
+      "category": "Video",
+      "settings": {
+        "iframe_video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "button_label": "Play Video"
+      },
+      "blocks": [
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        }
+      ]
+    }]
+  }
+{% endschema %}

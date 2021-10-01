@@ -1,0 +1,378 @@
+{% include 'include-image-with-text-overlay' %}
+
+{% schema %}
+  {
+    "name": "Image with text overlay",
+    "class": "shopify-section--image-with-text-overlay under-menu",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "wide_display",
+        "label": "Wide display",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_featured_items",
+        "label": "Enable Featured Items",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_btn_svg",
+        "label": "Enable SVG for Button",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image",
+        "info": "1800 x 1000px recommended"
+      },
+      {
+        "type": "richtext",
+        "id": "pretext",
+        "label": "Preheading"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "range",
+        "id": "heading_font_size",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "label": "Heading Font Size",
+        "default": 42
+      },
+      {
+        "type": "richtext",
+        "id": "subtitle",
+        "label": "Text"
+      },
+      {
+        "type": "checkbox",
+        "id": "caption_background",
+        "label": "Display solid text background",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "caption_background_transparency",
+        "label": "Enable background transparency"
+      },
+      {
+        "type": "text",
+        "id": "button1",
+        "label": "First button label"
+      },
+      {
+        "type": "url",
+        "id": "button1_link",
+        "label": "First button link"
+      },
+      {
+        "type": "text",
+        "id": "button2",
+        "label": "Second button label"
+      },
+      {
+        "type": "url",
+        "id": "button2_link",
+        "label": "Second button link"
+      },
+      {
+        "type": "text",
+        "id": "sign_text",
+        "label": "Sign Text"
+      },
+      {
+        "type": "richtext",
+        "id": "under_sign_text",
+        "label": "text below sign"
+      },
+      {
+        "type": "select",
+        "id": "text_position",
+        "label": "Text position",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_align",
+        "label": "Text alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Color"
+      },
+      {
+        "type": "color",
+        "id": "pre_text_color",
+        "label": "PreText"
+      },
+      {
+        "type": "color",
+        "id": "heading_color",
+        "label": "Heading"
+      },
+      {
+        "type": "color",
+        "id": "sub_text_color",
+        "label": "SubText"
+      },
+      {
+        "type": "color",
+        "id": "sign_text_color",
+        "label": "Sign Text"
+      },
+      {
+        "type": "color",
+        "id": "under_sign_text_color",
+        "label": "Text below Sign"
+      },
+      {
+        "type": "color",
+        "id": "btn_label_color",
+        "label": "Button Label"
+      },
+      {
+        "type": "color",
+        "id": "btn_bg_color",
+        "label": "Button BG"
+      },
+      {
+        "type": "header",
+        "content": "Mobile"
+      },
+      {
+        "type": "select",
+        "id": "mobile_image_crop",
+        "label": "Image cropping",
+        "options": [
+          {
+            "value": "none",
+            "label": "None"
+          },
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "mobile_text_below_image",
+        "label": "Show text below image",
+        "default": true
+      },
+      {
+        "type": "color",
+        "id": "mobile_text_color",
+        "label": "Text"
+      },
+      {
+        "type": "header",
+        "content": "Advanced"
+      },
+      {
+        "type": "paragraph",
+        "content": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/360022329373)"
+      },
+      {
+        "type": "text",
+        "id": "css_class",
+        "label": "CSS Class"
+      },
+      {
+        "type": "textarea",
+        "id": "custom_css",
+        "label": "Custom CSS"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Featured Item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Featured Image",
+            "info": "245 x 205px recommended"
+          },
+          {
+            "type": "text",
+            "id": "img_width_px",
+            "label": "Image Width",
+            "default": "270"
+          },
+          {
+            "type": "range",
+            "id": "bottom_percentage",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "label": "bottom percentage",
+            "default": 50
+          },
+          {
+            "type": "range",
+            "id": "title_bottom_percentage",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "label": "Title bottom percentage",
+            "default": 0
+          },
+          {
+            "type": "image_picker",
+            "id": "bg_image",
+            "label": "Background Image",
+            "info": "245 x 205px recommended"
+          },
+          {
+            "type": "range",
+            "id": "size_border",
+            "min": 0,
+            "max": 50,
+            "step": 1,
+            "label": "border size",
+            "default": 36
+          },
+          {
+            "type": "textarea",
+            "id": "custom_svg",
+            "label": "SVG file"
+          },
+          {
+            "type": "text",
+            "id": "item_title",
+            "label": "Item Title",
+            "default": "Award winning selection"
+          },
+          {
+            "type": "text",
+            "id": "sub_text",
+            "label": "Subtext",
+            "default": "£39.95"
+          },
+          {
+            "type": "range",
+            "id": "title_font_size",
+            "min": 0,
+            "max": 50,
+            "step": 1,
+            "label": "Item title font-size",
+            "default": 12
+          },
+          {
+            "type": "select",
+            "id": "font_weight",
+            "label": "font weight",
+            "default": "bold",
+            "options": [
+              {
+                "value": "bold",
+                "label": "Bold"
+              },
+              {
+                "value": "300",
+                "label": "Light"
+              },
+              {
+                "value": "normal",
+                "label": "Normal"
+              }
+            ]
+          },
+          {
+            "type": "url",
+            "id": "item_link",
+            "label": "Item link"
+          },
+          {
+            "type": "text",
+            "id": "link_text",
+            "label": "Link Text",
+            "default": "Shop Now"
+          },
+          {
+            "type": "header",
+            "content": "Colors"
+          },
+          {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background"
+          },
+          {
+            "type": "color",
+            "id": "border_color",
+            "label": "Border Color"
+          },
+          {
+            "type": "color",
+            "id": "title_color",
+            "label": "Title Color"
+          },
+          {
+            "type": "color",
+            "id": "sub_text_color",
+            "label": "Subtext Color"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image with text overlay",
+        "category": "Image",
+        "settings": {
+          "image": "",
+          "title": "Your Headline",
+          "text_position": "center",
+          "text_align": "center"
+        }
+      }
+    ]
+  }
+{% endschema %}

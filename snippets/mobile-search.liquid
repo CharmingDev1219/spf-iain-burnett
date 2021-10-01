@@ -1,0 +1,22 @@
+<div class="mobile-search" data-autocomplete-{{ settings.enable_autocomplete }}>
+  <div>
+    <div class="grey_background"></div>
+    <form class="search-form search-popup__form" action="{{ routes.search_url }}">
+      <div class="search__fields">
+        <input type="hidden" name="type" value="{{ settings.search_option }}" />
+        <label for="q" class="visuallyhidden">{{ 'general.search.title' | t: shop_name: shop.name }}</label>
+          <input class="input" id="q" type="text" name="q" placeholder="{{ 'general.search.title' | t: shop_name: shop.name }}" value="{{ search.terms }}" x-webkit-speech autocapitalize="off" autocomplete="off" autocorrect="off" />
+          <span class="label-search-result"></span>
+          <div class="submit-search">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.7802 28.2009L22.2179 20.6533C22.1006 20.5363 21.9248 20.4778 21.7489 20.4778H21.1041C23.1558 18.2545 24.3869 15.3876 24.3869 12.1697C24.3869 5.49976 18.8764 0 12.1935 0C5.45188 0 0 5.49976 0 12.1697C0 18.8981 5.45188 24.3393 12.1935 24.3393C15.3591 24.3393 18.2902 23.1107 20.4592 21.1214V21.7065C20.4592 21.9405 20.5178 22.116 20.6351 22.2331L28.1974 29.7806C28.4905 30.0731 28.9008 30.0731 29.1939 29.7806L29.7802 29.1955C30.0733 28.903 30.0733 28.4934 29.7802 28.2009ZM12.1935 22.4671C6.44846 22.4671 1.87592 17.9035 1.87592 12.1697C1.87592 6.49439 6.44846 1.87226 12.1935 1.87226C17.8798 1.87226 22.511 6.49439 22.511 12.1697C22.511 17.9035 17.8798 22.4671 12.1935 22.4671Z" fill="#7D241E"/>
+            </svg>
+          </div>
+          {% comment %}
+          <span class="icon-cross close-search"></span>
+          {% endcomment %}
+          <input type="submit" name="search" class="search_submit_btn" value="search" />
+      </div>
+    </form>
+  </div>
+</div>
